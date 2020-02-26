@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">{{ notification.category }}</h1>
+            {#     <p class="lead"> {{ rec.receiver }} </p>#}
+            <h3 class="lead"> {{ notification.receiver }} </h3>
+            <h3 class="lead"> {{ notification.content }} </h3>
+            <a style=" background-color: #8B0000;color: white;" class="btn btn-success" href="{{ path('replynot',{"id":notification.id}) }}">Reply</a></td>
+            <a href="{{ path('listnotFront') }}">
+                <button type="button" style="color: white;background-color: #6dc8c4" class="btn btn-success" >Back to the list</button></a>
+
+
+        </div>
+    </div>
+{% endblock %}

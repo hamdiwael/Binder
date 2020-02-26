@@ -1,0 +1,44 @@
+{% extends "back.html.twig" %}
+{% block container %}
+<style>
+<style>
+    th, td {
+        padding: 10px;
+    }
+    th {
+        text-align: left;
+    }
+</style>
+
+<h1>All Subjects</h1>
+
+{% if subjects is not empty %}
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Teachers</th>
+            <th>Classes</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for subject in subjects %}
+            <tr>
+                <td>{{ subject.name }}</td>
+                <td>{{ subject.teachers }}</td>
+                <td>{{ subject.classes  }}</td>
+                <td><a href="/admin/delete-subject/{{ subject.id }}">Delete</a></td>
+                <td><a href="/admin/update-subject/{{ subject.id }}">Update</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No subject found.</p>
+{% endif %}
+
+<br/>
+<a href="/admin/create-subject">Create New</a>
+{% endblock %}

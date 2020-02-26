@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+{% block section %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('Front/images/bg_2.jpg')}}');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <h1 class="mb-2 bread">Our clubs</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Library <i class="ion-ios-arrow-forward"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+    {% block content %}
+
+        {% set urlc= app.request.uri %}
+
+
+        {% set long = urlc|length %}
+
+        {% set res=  urlc|slice(33, long) %}
+
+        {% if activity.id == res %}
+            <center>
+
+      <p><h1>Activity Detail</h1></p>
+            <h1>About : {{ activity.about }}</h1>
+            <p>Location : {{ activity.location }}</p>
+        {% endif %}
+        <br><br><br><br><br>
+        {% set urlc= app.request.uri %}
+        {% set long = urlc|length %}
+        {% set res=  urlc|slice(33, long) %}
+        {% for commentaire in commentaires %}
+            {% if commentaire.activity.id == res %}
+
+
+                <div class="comment-body">
+                    <h3>samar</h3>
+                    <div   class="meta mb-2">{{ commentaire.datecreate|date }}</div>
+
+                    <p>
+
+
+                        {{commentaire.contenue}}
+
+                    </p>
+
+                </div>
+
+
+            {% endif %}
+        {% endfor %}
+        <div class="comment-form-wrap pt-5">
+            <h3 class="mb-5 h4 font-weight-bold">Leave a comment</h3>
+            {{form(form)}}
+
+        </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'baseback.html.twig' %}
+{% block content %}
+    <html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>
+            Time Table
+        </title>
+    </head>
+<body>
+<br>
+<br>
+<br>
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+<br>
+<br>
+<h1>Insert Time Table</h1>
+<br>
+<br>
+<br>
+<fieldset style="width: 90%">
+    {{ form_start(form) }}
+    <div class="input-group input-group-sm mb-3">
+        <h1>Class Name:</h1>{{ form_widget(form.classe) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1>Day:</h1>{{ form_widget(form.day) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1>Subject:</h1> {{ form_widget(form.subject) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1> Time:</h1> {{ form_widget(form.time)}}</br></div>
+    {{ form_widget(form.Insert) }}
+    {{ form_end(form) }}
+</fieldset>
+
+</body>
+</body>
+</html>
+{% endblock %}

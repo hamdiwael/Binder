@@ -1,0 +1,37 @@
+{% extends 'baseBack.html.twig' %}
+{% block content %}
+    <section id="main-content">
+    <section class="wrapper">
+    <div class="row">
+
+
+        <center>
+        <fieldset style="width:70%">
+
+        <table border="2">
+        <tr>
+
+            <th>about</th>
+            <th> date</th>
+            <th>duration by hour</th>
+            <th>location</th>
+
+
+        </tr>
+        {% for a in activity %}
+            <tr>
+
+                <td>{{ a.about }}</td>
+                <td>{{ a.date | date}}</td>
+                <td>{{ a.duration }}</td>
+                <td>{{ a.location }}</td>
+
+                <td><a  href="{{ path('club_updateActivity',{"id":a.id}) }}">update</a></td>
+                <td><a  href="{{ path('club_deleteActivity',{"id":a.id}) }}">delete</a></td>
+
+            </tr>
+        {% endfor %}
+
+    </table>
+        </fieldset> </center></div> </section> </section>
+{% endblock %}

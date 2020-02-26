@@ -1,0 +1,43 @@
+course_homepage:
+    path:     /
+    defaults: { _controller: CourseBundle:Default:index }
+create-course:
+    path:     /admin/create-course
+    defaults: { _controller: CourseBundle:Course:create }
+show-courses:
+    path:     /show-courses/
+    defaults: { _controller: CourseBundle:Course:show }
+view-course:
+    path:     /view-course/{id}
+    defaults: { _controller: CourseBundle:Course:view }
+update-course:
+    path:     /admin/update-course/{id}
+    defaults: { _controller: CourseBundle:Course:update }
+delete-course:
+    path:     /admin/delete-course/{id}
+    defaults: { _controller: CourseBundle:Course:delete }
+
+
+
+
+create-subject:
+    path:     /admin/create-subject
+    defaults: { _controller: CourseBundle:Subject:create }
+show-subjects:
+    path:     /show-subjects
+    defaults: { _controller: CourseBundle:Subject:show }
+view-subject:
+    path:     /view-subject/{id}
+    defaults: { _controller: CourseBundle:Subject:view }
+update-subject:
+    path:     /admin/update-subject/{id}
+    defaults: { _controller: CourseBundle:Subject:update }
+delete-subject:
+    path:     /admin/delete-subject/{id}
+    defaults: { _controller: CourseBundle:Subject:delete }
+
+
+
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

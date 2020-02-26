@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+<html>
+<head>
+    <title>class</title></head>
+<body>
+<center>
+    <img src="{{ asset('images/Schedule.png') }}" >
+
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+                            {{ form_start(form) }}
+                            {{ form_widget(form.classe) }}</br>
+                            {{ form_end(form) }}
+                            <table border="1">
+                                <tr>
+                                    <th>Time Table</th>
+                                    <th>Classes</th>
+
+
+                                </tr>
+                                {% for p in timetable %}
+                                    <tr>
+                                      <td>  <a href="{{ asset('uploads/brochures/' ~ p.content) }}">Time Table (PDF)</a></td>
+
+                                        <td>{{ p.classe.nom }}</td>
+
+                                    </tr>
+
+                                {% endfor %}
+                            </table>
+
+
+
+
+
+
+
+</center>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'baseback.html.twig' %}
+{% block content %}
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>
+add class
+    </title>
+</head>
+<body>
+
+<center>
+    <br>
+    <br>
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+    <br>
+    <br>
+                      {{ form_start(form) }}
+
+                        <h1>Insert class</h1>
+                        <br>
+                        <br>
+<fieldset style="width: 100%">
+ <div class="input-group input-group-sm mb-3"><h2> Name </h2> {{ form_widget(form.nom) }}</div>
+    <div class="input-group input-group-sm mb-3" ><h2>Number of Pupils </h2> {{ form_widget(form.nbPupils) }}</div>
+
+
+
+    {{ form_widget(form.Insert) }}
+    {{ form_end(form) }}
+</fieldset>
+</center>
+</body>
+</html>
+{% endblock %}
+
+

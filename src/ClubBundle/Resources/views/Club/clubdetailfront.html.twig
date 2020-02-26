@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+    {% block section %}
+
+        <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('Front/images/bg_2.jpg')}}');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-9 ftco-animate text-center">
+                        <h1 class="mb-2 bread">Our clubs</h1>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Library <i class="ion-ios-arrow-forward"></i></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% endblock %}
+{% block content %}
+
+
+    {% set urlc= app.request.uri %}
+
+
+    {% set long = urlc|length %}
+
+    {% set res=  urlc|slice(33, long) %}
+
+    {% if club.id == res %}
+        <center>
+
+        <img src="{{ asset('images/') }}{{ club.nomImage }}"style="width: 150px;height: 150px">
+
+        <h1>{{ club.name }}</h1>
+        <p>{{ club.specialty }}</p>
+    {% endif %}
+    <br><br><br><br><br>
+
+
+    {% for activity in activities %}
+    {% if activity.club.id == res %}
+
+        <div class="col-md-6 course d-lg-flex ftco-animate">
+            <div class="text bg-light p-4">
+                <h3><a href="{{path('activityDetailsFront',{'id':activity.id})}}">{{activity.about}}</a></h3>
+                <p>{{activity.location}}</p>
+                <p>{{activity.date|date}}</p>
+                <p>{{activity.duration}}</p>
+            </div>
+        </div>
+
+    {% endif %}
+    {% endfor %}
+
+
+{% endblock %}

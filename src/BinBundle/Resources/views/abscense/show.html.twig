@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">{{ abscense.pupl }}</h1>
+            <p class="lead"> {{ abscense.groupe }} </p>
+            {#     <p class="lead"> {{ rec.date }} </p>#}
+            <h3 class="lead"> {{ abscense.nbr }} </h3>
+            <h3 class="lead"> {{ abscense.subject }} </h3>
+            <a href="{{ path('listabsencesFront') }}">
+                <button type="button" style="color: white;background-color: #6dc8c4" class="btn btn-success" >Back to the list</button></a>
+
+
+        </div>
+    </div>
+{% endblock %}

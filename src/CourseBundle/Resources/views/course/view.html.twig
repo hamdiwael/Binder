@@ -1,0 +1,35 @@
+{% extends "back.html.twig" %}
+{% block container %}
+<style>
+    th, td {
+        padding: 10px;
+    }
+    th {
+        text-align: right;
+    }
+</style>
+
+<h1>Course Created or Modified</h1>
+
+<table>
+    <tbody>
+    <tr>
+        <th>Subject:</th>
+        <td>{{ course.subject }}</td>
+    </tr>
+    <tr>
+        <th>Content:</th>
+        <td>{{ course.content }}</td>
+    </tr>
+    <tr>
+        <th>Teacher:</th>
+        <td>{{ course.teacher }}</td>
+    </tr>
+    >
+    </tbody>
+</table>
+
+<br/>
+<a href="/show-courses">View All</a> -
+<a href="/update-course/{{ course.id }}">Modify</a>
+{% endblock %}

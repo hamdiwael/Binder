@@ -1,0 +1,35 @@
+{% extends "back.html.twig" %}
+{% block container %}
+<style>
+    th, td {
+        padding: 10px;
+    }
+    th {
+        text-align: right;
+    }
+</style>
+
+<h1>Subject Created or Modified</h1>
+
+<table>
+    <tbody>
+    <tr>
+        <th>Name:</th>
+        <td>{{ subject.name }}</td>
+    </tr>
+    <tr>
+        <th>Teachers:</th>
+        <td>{{ subject.teachers }}</td>
+    </tr>
+    <tr>
+        <th>Classes:</th>
+        <td>{{ subject.classes }}</td>
+    </tr>
+    >
+    </tbody>
+</table>
+
+<br/>
+<a href="/show-subjects">View All</a> -
+<a href="/update-subject/{{ subject.id }}">Modify</a>
+{% endblock %}

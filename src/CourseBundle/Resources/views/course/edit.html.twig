@@ -1,0 +1,36 @@
+{% extends "back.html.twig" %}
+{% block container %}
+<style>
+    th, td {
+        padding: 10px;
+    }
+    th {
+        text-align: right;
+    }
+</style>
+
+<h1>Create or Update Course:</h1>
+
+{{ form_start(form) }}
+
+<table>
+    <tbody>
+    <tr>
+        <th>Subject:</th>
+        <td>{{ form_widget(form.subject) }}</td>
+    </tr>
+    <tr>
+        <th>Content:</th>
+        <td>{{ form_widget(form.content) }}</td>
+    </tr>
+    <tr>
+        <th>Teacher:</th>
+        <td>{{ form_widget(form.teacher) }}</td>
+    </tr>
+
+    </tbody>
+</table>
+
+{{ form_end(form) }}
+
+{% endblock %}

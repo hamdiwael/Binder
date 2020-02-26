@@ -1,0 +1,43 @@
+{% extends 'base2.html.twig' %}
+
+{% block content %}
+
+<div style="text-align: center;">
+    <h1>List of grades</h1>
+    <div>
+        <form action="" method="get">
+            <label for="filter">Filter</label>
+            <input name="filter" type="text">
+            <button type="submit" class="btn btn-default btn-sm">Filter Now</button>
+        </form>
+    </div>
+
+        <div class=table-responsive">
+            <table class="table-hover table"  border="1">
+                    <tr>
+
+                        <th>{{  knp_pagination_sortable(pagination, 'subject', 'ex.idExam.subject') }}</th>
+                        <th>{{  knp_pagination_sortable(pagination, 'teacher', 'ex.teacher.fullname') }}</th>
+                        <th>{{  knp_pagination_sortable(pagination, 'pupil', 'ex.pupil.fullname') }}</th>
+                        <th>{{  knp_pagination_sortable(pagination, 'grade', 'ex.grade') }}</th>
+
+                    </tr>
+                    {% for grade in pagination %} <tr>
+
+                        <td>{{ grade.examname.subject }}</td>
+                        <td>{{ grade.teacher.fullname}}</td>
+                        <td>{{ grade.pupil.fullname}}</td>
+                        <td>{{ grade.grade}}</td>
+                        <td> <a href="{{ path('updategrades',{'id':grade.idg}) }}" class ="btn btn-primary btn-sm">Update</a></td>
+                        <td> <a href="{{ path('deletegrades',{'id':grade.idg}) }}" class ="btn btn-warning btn-sm">Delete</a></td>
+                    </tr>
+
+
+                    {% endfor %} </table>
+            <div class="navigation">
+                {{ knp_pagination_render(pagination) }}
+            </div></div>
+        </div>
+
+</div>
+{% endblock %}

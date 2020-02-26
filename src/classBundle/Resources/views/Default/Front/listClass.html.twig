@@ -1,0 +1,41 @@
+
+{% extends 'base.html.twig' %}
+{% block content %}
+<html>
+<head>
+    <title>class</title></head>
+<body>
+
+<center>
+    <img src="{{ asset('images/classes_01.gif')  }}" >
+
+<fieldset style="width: 30%">
+
+                       <h1><h1> <strong>List of Classes</strong></h1></h1>
+    <br>
+                        <table border="1" width="70%">
+                            <tr>
+                                <th>Classes</th>
+                                <th>Pupils</th>
+
+                            </tr>
+                        {% for classe in classe  %}
+<tr >
+
+                           <td>{{ classe.nom }}        </td>
+
+                                <td>{{ classe.nbPupils }}         </td>
+
+
+
+
+                        {% endfor %}
+
+</tr>
+                        </table>
+</fieldset>
+</center>
+</body>
+
+</html>
+{% endblock %}

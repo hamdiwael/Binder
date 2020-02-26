@@ -1,0 +1,43 @@
+{% extends 'base2.html.twig' %}
+{% block content %}
+    <div style="text-align: center;">
+        <h1> List of exams </h1>
+                    <br/>
+        <br/>
+<div>
+    <form action="" method="get">
+        <label for="filter">Filter</label>
+        <input name="filter" type="text">
+        <button type="submit" class="btn btn-default btn-sm">Filter Now</button>
+    </form>
+</div>
+
+            <div class=table-responsive">
+
+                <table class="table-hover table"  border="1">
+
+                    <tr>
+
+                        <th>{{  knp_pagination_sortable(pagination, 'subject', 'ex.subject') }}</th>
+                        <th>{{  knp_pagination_sortable(pagination, 'date', 'ex.date')}}</th>
+                        <th>Duration</th>
+                    </tr>
+
+                    {% for exam in pagination %} <tr class="success">
+                        <td>{{ exam.subject}}</td>
+                        <td>{{ exam.date|date }}</td>
+                        <td>{{ exam.duration}}</td>
+                        <td> <a href="{{ path('updateexams',{'id':exam.ide}) }}" class ="btn btn-primary btn-sm">Update</a></td>
+                        <td> <a href="{{ path('deleteexams',{'id':exam.ide}) }}" class ="btn btn-warning btn-sm">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+                </div>
+                <br/>
+                <div class="navigation">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+                </div> </div> </div>
+    </section>
+{% endblock %}

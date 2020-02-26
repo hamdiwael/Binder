@@ -1,0 +1,35 @@
+{% extends 'base2.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% block content %}
+    <h1> </h1>
+    {{ form(form) }}
+
+    <center>
+    <table class="table table-striped">
+        <thead>
+        <th>category</th>
+        <th>sender</th>
+        <th>receiver</th>
+        <th>content</th>
+        <th>state</th>
+        </thead>
+
+        <tbody>
+
+        {% for n in notification %}
+            <tr>
+                <td>{{ n.category }}</td>
+                <td>{{ n.sender }}</td>
+                <td>{{ n.receiver }}</td>
+                <td>{{ n.content}}</td>
+                <td>{{ n.state}}</td>
+
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+
+{% endblock %}

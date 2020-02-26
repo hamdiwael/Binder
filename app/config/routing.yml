@@ -1,0 +1,36 @@
+club:
+    resource: "@ClubBundle/Resources/config/routing.yml"
+    prefix:   /
+
+class:
+    resource: "@classBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bin:
+    resource: "@BinBundle/Resources/config/routing.yml"
+    prefix:   /
+
+exams:
+    resource: "@ExamsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+course:
+    resource: "@CourseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+
+backback:
+    path:     /backback
+    defaults: { _controller: AppBundle:Default:back }
+
+course-table:
+    path:     /course-table
+    defaults: { _controller: AppBundle:Default:table }
+

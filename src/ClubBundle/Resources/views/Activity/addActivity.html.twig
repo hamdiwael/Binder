@@ -1,0 +1,29 @@
+{% extends 'baseBack.html.twig' %}
+{% block content %}
+    <section id="main-content">
+    <section class="wrapper">
+    <div class="row">
+<html>
+<head>
+    <title>
+        Ajout des Clubs
+    </title>
+</head>
+<body>
+
+<h1>add activity</h1>
+<fieldset style="width: 30%">
+    {{ form_start(form) }}
+
+  about  {{ form_widget(form.about) }}</br>
+   date {{ form_widget(form.date) }}</br>
+ location   {{ form_widget(form.location) }}</br>
+  duration by hour  {{ form_widget(form.duration) }}</br>
+    {{ form_widget(form.addActivity) }}
+    {{ form_end(form) }}
+</fieldset>
+
+</body>
+</html>
+    </div> </section> </section>
+{% endblock %}

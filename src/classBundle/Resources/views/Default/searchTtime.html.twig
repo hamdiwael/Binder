@@ -1,0 +1,69 @@
+{% extends 'baseback.html.twig' %}
+{% block content %}
+    <html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>
+            Time Table
+        </title>
+    </head>
+<body>
+<br>
+<br>
+<br>
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+
+<h1>Search Session </h1>
+<br>
+<br>
+<br>
+<fieldset style="width: 90%">
+    {{ form_start(form) }}
+
+
+    <div class="input-group input-group-sm mb-3">
+        <h1>Day:</h1>{{ form_widget(form.day) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1>Subject:</h1> {{ form_widget(form.subject) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1>Time:</h1> {{ form_widget(form.time) }}</br></div>
+    <div class="input-group input-group-sm mb-3">
+        <h1>Class:</h1> {{ form_widget(form.classe) }}</br></div>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <th> day</th>
+            <th>subject</th>
+            <th>time</th>
+            <th>classe</th>
+
+
+        </tr>
+        {% for p in time %}
+            <tr>
+
+                <td>{{ p.day }}</td>
+                <td>{{ p.subject }}</td>
+                <td>{{ p.time }}</td>
+                <td>{{ p.classe.nom}}</td>
+
+
+            </tr>
+
+        {% endfor %}
+    </table>
+
+
+<br>
+    <br>
+
+
+    {{ form_widget(form.search) }}
+    {{ form_end(form) }}
+</fieldset>
+
+</body>
+</body>
+</html>
+{% endblock %}

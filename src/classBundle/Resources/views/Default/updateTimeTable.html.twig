@@ -1,0 +1,28 @@
+{% extends 'baseback.html.twig' %}
+{% block content %}
+
+    <center>
+        {% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+        <br>
+        <br>
+        <br>
+        <fieldset style="width: 90%">
+            <h1>Update Time Table</h1>
+<br>
+            {{ form_start(form) }}
+            <div class="input-group input-group-sm mb-3">  <h2> Time Table </h2>{{ form_widget(form.content) }}</div>
+
+            <div class="input-group input-group-sm mb-3">
+                <h2> Class</h2>
+
+                {{ form_widget(form.classe) }}</br></div>
+            {{ form_widget(form.update) }}
+            {{ form_end(form) }}
+        </fieldset>
+    </center>
+{% endblock  %}
+
+
+
+

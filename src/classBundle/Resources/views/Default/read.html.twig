@@ -1,0 +1,45 @@
+
+{% extends 'baseback.html.twig' %}
+{% block content %}
+<html>
+<head>
+    <title>class</title></head>
+<body>
+
+<center>
+
+<fieldset style="width: 30%">
+<br>
+    <br>
+                       <h1><h1> <strong>List of Class</strong></h1></h1>
+    <br>
+                        <table border="1" width="70%">
+                            <tr>
+                                <th>Classes</th>
+                                <th>Pupils</th>
+                                <th>Delete</th>
+                                <th>Update</th>
+
+                            </tr>
+                        {% for classe in classe  %}
+<tr >
+
+                           <td>{{ classe.nom }}        </td>
+
+                                <td>{{ classe.nbPupils }}         </td>
+
+
+                                <td class="col-md-2"><a  href="{{ path('class_delete',{"id":classe.id}) }}">Delete</a></td>
+                                <td class="col-md-2"><a  href="{{ path('class_update',{"id":classe.id}) }}">Update</a></td>
+
+
+                        {% endfor %}
+
+</tr>
+                        </table>
+</fieldset>
+</center>
+</body>
+
+</html>
+{% endblock %}
