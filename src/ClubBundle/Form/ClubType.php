@@ -19,21 +19,13 @@ class ClubType extends AbstractType
     {
         $builder->add('name')
                  ->add('specialty')
-            ->add('file')
+
 
             ->add('responsible',EntityType::class,array(
-                'class'=>'ClubBundle:teacher',
-                'choice_label'=>'name',
+                'class'=>'ExamsBundle:teacher',
+                'choice_label'=>'fullname',
                 'multiple'=>false,
                 'expanded' => false,))
-                  ->add('members',EntityType::class,array(
-                      'class'=>'ClubBundle:Pupil',
-                      'choice_label'=>'name',
-                      'multiple'=>false,
-                      'expanded' => false,))
-
-
-
 
                     ->add('add',SubmitType::class);
     }/**

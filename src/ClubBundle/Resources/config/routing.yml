@@ -1,3 +1,53 @@
 club_homepage:
     path:     /
     defaults: { _controller: ClubBundle:Default:index }
+
+club_Add:
+    path:     /addClub
+    defaults: { _controller: ClubBundle:Club:addClub }
+club_display:
+    path:     /displayClubs
+    defaults: { _controller: ClubBundle:Club:displayClubs }
+club_AddA:
+    path:     /addActivities
+    defaults: { _controller: ClubBundle:Club:addActivity }
+club_displayActivity:
+    path:     /displayActivities
+    defaults: { _controller: ClubBundle:Club:displayActivities }
+club_updateClub:
+    path:     /updateClub/{id}
+    defaults: { _controller: ClubBundle:Club:updateClub }
+club_updateActivity:
+    path:     /updateActivity/{id}
+    defaults: { _controller: ClubBundle:Club:updateActivity }
+
+club_deleteClub:
+    path:     /deleteClub/{id}
+    defaults: { _controller: ClubBundle:Club:deleteClub}
+club_deleteActivity:
+    path:     /deleteActivity/{id}
+    defaults: { _controller: ClubBundle:Club:deleteActivity}
+club_welcome:
+    path:     /welcome
+    defaults: { _controller: ClubBundle:Club:welcome}
+
+club_afficheFront:
+    path:     /front
+    defaults: { _controller: ClubBundle:Club:displayClubsfront}
+
+detail_club:
+    path:     /detailsCat/{id}
+    defaults: { _controller: ClubBundle:Club:clubDetails }
+
+clubDetailsfront:
+    path:     /detailCatf/{id}
+    defaults: { _controller: ClubBundle:Club:clubDetailsfront }
+
+activityDetailsFront:
+    path:     /detailActf/{id}
+    defaults: { _controller: ClubBundle:Club:activityDetailsFront }
+export:
+    path:     /export
+    defaults: { _controller: ClubBundle:Club:export }
+
+

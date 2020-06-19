@@ -22,7 +22,7 @@ class SubjectController extends Controller
 
         $subject = new Subject();
         $form = $this->createFormBuilder($subject)
-            ->add('idSu', \Symfony\Component\Form\Extension\Core\Type\IntegerType::class)
+            ->add('id', \Symfony\Component\Form\Extension\Core\Type\IntegerType::class)
             ->add('name', \Symfony\Component\Form\Extension\Core\Type\TextType::class)
             ->add('teachers', \Symfony\Component\Form\Extension\Core\Type\TextType::class)
             ->add('classes', \Symfony\Component\Form\Extension\Core\Type\TextType::class)

@@ -1,20 +1,19 @@
-{% extends 'baseBack.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
-    <section id="main-content">
-    <section class="wrapper">
-    <div class="row">
+  <br/>
+    <h1><strong>List of activities</strong></h1>
 
 
-        <center>
-        <fieldset style="width:70%">
 
-        <table border="2">
+        <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
+
+            <table class="table-hover table"  border="1">
         <tr>
 
-            <th>about</th>
-            <th> date</th>
-            <th>duration by hour</th>
-            <th>location</th>
+            <th>About</th>
+            <th>Date</th>
+            <th>Duration by hour</th>
+            <th>Location</th>
 
 
         </tr>
@@ -26,8 +25,10 @@
                 <td>{{ a.duration }}</td>
                 <td>{{ a.location }}</td>
 
-                <td><a  href="{{ path('club_updateActivity',{"id":a.id}) }}">update</a></td>
-                <td><a  href="{{ path('club_deleteActivity',{"id":a.id}) }}">delete</a></td>
+
+
+                <td><a class="btn btn-warning btn-sm"  href="{{ path('club_updateActivity',{"id":a.id}) }}">update</a></td>
+                <td><a class="btn btn-danger btn-sm" href="{{ path('club_deleteActivity',{"id":a.id}) }}">delete</a></td>
 
             </tr>
         {% endfor %}

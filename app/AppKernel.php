@@ -27,6 +27,8 @@ class AppKernel extends Kernel
             new BinBundle\BinBundle(),
             new classBundle\classBundle(),
             new ClubBundle\ClubBundle(),
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+            new Egyg33k\CsvBundle\Egyg33kCsvBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

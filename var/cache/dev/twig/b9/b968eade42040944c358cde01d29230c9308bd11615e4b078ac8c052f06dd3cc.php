@@ -411,6 +411,6 @@ class __TwigTemplate_021d7a16a165c129d0ab0664465085c7e1e0da7faaf394a758ae238b691
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/wael/34/binder/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/home/wael/34/integration/web/Binder/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig");
     }
 }

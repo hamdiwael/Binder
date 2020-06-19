@@ -115,78 +115,12 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
                     </div>
                     <!-- Navbar Menu -->
                     <ul class=\"nav-menu list-unstyled d-flex flex-md-row align-items-md-center\">
-                        <!-- Search-->
-                        <!-- Notifications-->
-                        <li class=\"nav-item dropdown\"> <a id=\"notifications\" rel=\"nofollow\" data-target=\"#\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link\"><i class=\"fa fa-bell-o\"></i><span class=\"badge bg-red badge-corner\">12</span></a>
-                            <ul aria-labelledby=\"notifications\" class=\"dropdown-menu\">
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-envelope bg-green\"></i>You have 6 new messages </div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-twitter bg-blue\"></i>You have 2 followers</div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-upload bg-orange\"></i>Server Rebooted</div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-twitter bg-blue\"></i>You have 2 followers</div>
-                                            <div class=\"notification-time\"><small>10 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item all-notifications text-center\"> <strong>view all notifications                                            </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Messages                        -->
-                        <li class=\"nav-item dropdown\"> <a id=\"messages\" rel=\"nofollow\" data-target=\"#\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link\"><i class=\"fa fa-envelope-o\"></i><span class=\"badge bg-orange badge-corner\">10</span></a>
-                            <ul aria-labelledby=\"notifications\" class=\"dropdown-menu\">
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"";
-        // line 82
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/avatar-1.jpg"), "html", null, true);
-        echo "\" alt=\"\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Jason Doe</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"";
-        // line 87
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/avatar-2.jpg"), "html", null, true);
-        echo "\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Frank Williams</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"";
-        // line 92
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/avatar-3.jpg"), "html", null, true);
-        echo "\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Ashley Wood</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item all-notifications text-center\"> <strong>Read all messages   </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Languages dropdown    -->
-                        <ul aria-labelledby=\"languages\" class=\"dropdown-menu\">
-                            <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\"> <img src=\"";
-        // line 101
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/flags/16/DE.png"), "html", null, true);
-        echo "\" alt=\"English\" class=\"mr-2\">German</a></li>
-                            <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\"> <img src=\"";
-        // line 102
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/flags/16/FR.png"), "html", null, true);
-        echo "\" alt=\"English\" class=\"mr-2\">French                                         </a></li>
-                        </ul>
-                        </li>
+
+
+
                         <!-- Logout    -->
                         <li class=\"nav-item\"><a href=\"";
-        // line 106
+        // line 55
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_logout");
         echo "\" class=\"nav-link logout\"> <span class=\"d-none d-sm-inline\">Logout</span><i class=\"fa fa-sign-out\"></i></a></li>
                     </ul>
@@ -200,14 +134,27 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
             <!-- Sidebar Header-->
             <div class=\"sidebar-header d-flex align-items-center\">
                 <div class=\"avatar\"><img src=\"";
-        // line 117
+        // line 66
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/image1.png"), "html", null, true);
         echo "\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
                 <div class=\"title\">
-                    <h1 class=\"h4\">Logged in as ";
-        // line 119
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", []), "username", []), "html", null, true);
-        echo "</h1>
+                    <h1 class=\"h4\">
+                        ";
+        // line 69
+        if ($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", [])) {
+            // line 70
+            echo "                        ";
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute(($context["app"] ?? $this->getContext($context, "app")), "user", []), "username", []), "html", null, true);
+            echo "
+                        ";
+        } else {
+            // line 72
+            echo "                         Ananymous
+                        ";
+        }
+        // line 74
+        echo "
+                    </h1>
                     <p>Admin</p>
                 </div>
             </div>
@@ -217,11 +164,11 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
                 <li><a href=\"#classe\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-file-text-o\" aria-hidden=\"true\"></i>Exams </a>
                     <ul id=\"classe\" class=\"collapse list-unstyled \">
                         <li><a href=\"";
-        // line 128
+        // line 84
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("createexams");
         echo "\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i>Insert Exam</a></li>
                         <li><a href=\"";
-        // line 129
+        // line 85
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("affichebackexams");
         echo "\"><i class=\"fa fa-list\" aria-hidden=\"true\"></i>List of exams</a></li>
                     </ul>
@@ -230,15 +177,120 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
                 <li><a href=\"#timeTable\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i>Grades </a>
                     <ul id=\"timeTable\" class=\"collapse list-unstyled \">
                         <li><a href=\"";
-        // line 135
+        // line 91
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("creategrades");
         echo "\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i>Insert grades</a></li>
                         <li><a href=\"";
-        // line 136
+        // line 92
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("affichebackgrades");
         echo "\"><i class=\"fa fa-list\" aria-hidden=\"true\"></i>list of grades</a></li>
                     </ul>
                 </li>
+
+                <li><a href=\"";
+        // line 96
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("show-subjects");
+        echo "\"><i class=\"fa fa-bookmark\" aria-hidden=\"true\"></i>Subjects </a></li>
+                <li ><a href=\"#exampledropdownDropdown\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i>Course </a>
+                    <ul id=\"exampledropdownDropdown\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 99
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("show-courses");
+        echo "\">Show Courses</a></li>
+                        <li><a href=\"";
+        // line 100
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("create-course");
+        echo "\">Add course</a></li>
+                    </ul>
+                </li>
+                        <li><a href=\"#classee\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-users\" aria-hidden=\"true\"></i>Classes </a>
+                    <ul id=\"classee\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 105
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("class_add");
+        echo "\">Insert Class</a></li>
+                        <li><a href=\"";
+        // line 106
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("class_read");
+        echo "\">List of Classes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href=\"#timeTablee\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>
+                        Time Table </a>
+                    <ul id=\"timeTablee\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 113
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("class_addTimeTable");
+        echo "\">Insert Time Table</a></li>
+                        <li><a href=\"";
+        // line 114
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("class_searchTimeTable");
+        echo "\">Search Time Table</a></li>
+
+
+
+                    </ul>
+                </li>
+                <li><a href=\"#classes\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-cubes\" aria-hidden=\"true\"></i>Clubs </a>
+                    <ul id=\"classes\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 122
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("club_Add");
+        echo "\">Add club</a></li>
+                        <li><a href=\"";
+        // line 123
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("club_display");
+        echo "\">Display clubs</a></li>
+                    </ul>
+                </li>
+
+                <li><a href=\"#timeTables\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>Activities</a>
+                    <ul id=\"timeTables\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 129
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("club_AddA");
+        echo "\">Add activities</a></li>
+                        <li><a href=\"";
+        // line 130
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("club_displayActivity");
+        echo "\">Display activities</a></li>
+
+            </ul>
+                <li><a href=\"#notification\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-bell\" aria-hidden=\"true\"></i>Notifications </a>
+                    <ul id=\"notification\" class=\"collapse list-unstyled \">
+                        <li><a href=\"";
+        // line 135
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("binaddot");
+        echo "\">Add notifications</a></li>
+                        <li><a href=\"";
+        // line 136
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("listnot");
+        echo "\">List of notifications</a></li>
+                        <li><a href=\"";
+        // line 137
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("searchnot");
+        echo "\">Search Notification</a></li>
+                    </ul>
+                </li>
+
+                    <li><a href=\"#abscense\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-exclamation-circle\" aria-hidden=\"true\"></i>Abscenses </a>
+                        <ul id=\"abscense\" class=\"collapse list-unstyled \">
+                            <li><a href=\"";
+        // line 143
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("binaddabs");
+        echo "\">Add Abscense</a></li>
+                            <li><a href=\"";
+        // line 144
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("listabsences");
+        echo "\">List of abscenses</a></li>
+                            <li><a href=\"";
+        // line 145
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("searchabscenses");
+        echo "\">Search Abscenss</a></li>
+
+                        </ul>
+                    </li>
 
         </nav>
         <div class=\"content-inner\">
@@ -247,35 +299,23 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
             <!-- Dashboard Counts Section-->
             <div style=\"text-align: center;\">
                 ";
-        // line 146
+        // line 156
         $this->displayBlock('content', $context, $blocks);
-        // line 149
+        // line 159
         echo "            </div>
             <!-- Dashboard Header Section    -->
 
 
             <!-- Page Footer-->
-            <footer class=\"main-footer\">
-                <div class=\"container-fluid\">
-                    <div class=\"row\">
-                        <div class=\"col-sm-6\">
-                            <p>Your company &copy; 2017-2019</p>
-                        </div>
-                        <div class=\"col-sm-6 text-right\">
-                            <p>Design by <a href=\"https://bootstrapious.com/p/admin-template\" class=\"external\">Bootstrapious</a></p>
-                            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                        </div>
-                    </div>
-                </div>
-            </footer>
+
         </div>
     </div>
 </div>
 
 ";
-        // line 171
+        // line 169
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 182
+        // line 180
         echo "</body>
 </html>";
         
@@ -286,7 +326,7 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
 
     }
 
-    // line 146
+    // line 156
     public function block_content($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -295,7 +335,7 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 147
+        // line 157
         echo "<img src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/kids.jpg"), "html", null, true);
         echo "\" alt=\"\" class=\"img-fluid rounded-circle\">
@@ -308,7 +348,7 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
 
     }
 
-    // line 171
+    // line 169
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
@@ -317,37 +357,37 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 172
+        // line 170
         echo "    <script src=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 173
+        // line 171
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/popper.js/umd/popper.min.js"), "html", null, true);
         echo "\"> </script>
     <script src=\"";
-        // line 174
+        // line 172
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/bootstrap/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 175
+        // line 173
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/jquery.cookie/jquery.cookie.js"), "html", null, true);
         echo "\"> </script>
     <script src=\"";
-        // line 176
+        // line 174
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/chart.js/Chart.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 177
+        // line 175
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("vendorr/jquery-validation/jquery.validate.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 178
+        // line 176
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("jss/charts-home.js"), "html", null, true);
         echo "\"></script>
     <!-- Main File-->
     <script src=\"";
-        // line 180
+        // line 178
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("jss/front.js"), "html", null, true);
         echo "\"></script>
 ";
@@ -371,7 +411,7 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
 
     public function getDebugInfo()
     {
-        return array (  351 => 180,  346 => 178,  342 => 177,  338 => 176,  334 => 175,  330 => 174,  326 => 173,  321 => 172,  312 => 171,  299 => 147,  290 => 146,  279 => 182,  277 => 171,  253 => 149,  251 => 146,  238 => 136,  234 => 135,  225 => 129,  221 => 128,  209 => 119,  204 => 117,  190 => 106,  183 => 102,  179 => 101,  167 => 92,  159 => 87,  151 => 82,  110 => 44,  89 => 26,  85 => 25,  80 => 23,  75 => 21,  70 => 19,  65 => 17,  60 => 15,  55 => 13,  50 => 11,  38 => 1,);
+        return array (  391 => 178,  386 => 176,  382 => 175,  378 => 174,  374 => 173,  370 => 172,  366 => 171,  361 => 170,  352 => 169,  339 => 157,  330 => 156,  319 => 180,  317 => 169,  305 => 159,  303 => 156,  289 => 145,  285 => 144,  281 => 143,  272 => 137,  268 => 136,  264 => 135,  256 => 130,  252 => 129,  243 => 123,  239 => 122,  228 => 114,  224 => 113,  214 => 106,  210 => 105,  202 => 100,  198 => 99,  192 => 96,  185 => 92,  181 => 91,  172 => 85,  168 => 84,  156 => 74,  152 => 72,  146 => 70,  144 => 69,  138 => 66,  124 => 55,  110 => 44,  89 => 26,  85 => 25,  80 => 23,  75 => 21,  70 => 19,  65 => 17,  60 => 15,  55 => 13,  50 => 11,  38 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -434,60 +474,9 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
                     </div>
                     <!-- Navbar Menu -->
                     <ul class=\"nav-menu list-unstyled d-flex flex-md-row align-items-md-center\">
-                        <!-- Search-->
-                        <!-- Notifications-->
-                        <li class=\"nav-item dropdown\"> <a id=\"notifications\" rel=\"nofollow\" data-target=\"#\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link\"><i class=\"fa fa-bell-o\"></i><span class=\"badge bg-red badge-corner\">12</span></a>
-                            <ul aria-labelledby=\"notifications\" class=\"dropdown-menu\">
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-envelope bg-green\"></i>You have 6 new messages </div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-twitter bg-blue\"></i>You have 2 followers</div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-upload bg-orange\"></i>Server Rebooted</div>
-                                            <div class=\"notification-time\"><small>4 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\">
-                                        <div class=\"notification\">
-                                            <div class=\"notification-content\"><i class=\"fa fa-twitter bg-blue\"></i>You have 2 followers</div>
-                                            <div class=\"notification-time\"><small>10 minutes ago</small></div>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item all-notifications text-center\"> <strong>view all notifications                                            </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Messages                        -->
-                        <li class=\"nav-item dropdown\"> <a id=\"messages\" rel=\"nofollow\" data-target=\"#\" href=\"#\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link\"><i class=\"fa fa-envelope-o\"></i><span class=\"badge bg-orange badge-corner\">10</span></a>
-                            <ul aria-labelledby=\"notifications\" class=\"dropdown-menu\">
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"{{ asset('imgg/avatar-1.jpg') }}\" alt=\"\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Jason Doe</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"{{ asset('imgg/avatar-2.jpg') }}\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Frank Williams</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item d-flex\">
-                                        <div class=\"msg-profile\"> <img src=\"{{ asset('imgg/avatar-3.jpg') }}\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
-                                        <div class=\"msg-body\">
-                                            <h3 class=\"h5\">Ashley Wood</h3><span>Sent You Message</span>
-                                        </div></a></li>
-                                <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item all-notifications text-center\"> <strong>Read all messages   </strong></a></li>
-                            </ul>
-                        </li>
-                        <!-- Languages dropdown    -->
-                        <ul aria-labelledby=\"languages\" class=\"dropdown-menu\">
-                            <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\"> <img src=\"{{ asset('imgg/flags/16/DE.png') }}\" alt=\"English\" class=\"mr-2\">German</a></li>
-                            <li><a rel=\"nofollow\" href=\"#\" class=\"dropdown-item\"> <img src=\"{{ asset('imgg/flags/16/FR.png') }}\" alt=\"English\" class=\"mr-2\">French                                         </a></li>
-                        </ul>
-                        </li>
+
+
+
                         <!-- Logout    -->
                         <li class=\"nav-item\"><a href=\"{{ path('fos_user_security_logout') }}\" class=\"nav-link logout\"> <span class=\"d-none d-sm-inline\">Logout</span><i class=\"fa fa-sign-out\"></i></a></li>
                     </ul>
@@ -502,7 +491,14 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
             <div class=\"sidebar-header d-flex align-items-center\">
                 <div class=\"avatar\"><img src=\"{{ asset('imgg/image1.png') }}\" alt=\"...\" class=\"img-fluid rounded-circle\"></div>
                 <div class=\"title\">
-                    <h1 class=\"h4\">Logged in as {{ app.user.username }}</h1>
+                    <h1 class=\"h4\">
+                        {% if app.user  %}
+                        {{ app.user.username }}
+                        {% else %}
+                         Ananymous
+                        {% endif %}
+
+                    </h1>
                     <p>Admin</p>
                 </div>
             </div>
@@ -523,6 +519,60 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
                     </ul>
                 </li>
 
+                <li><a href=\"{{ path('show-subjects') }}\"><i class=\"fa fa-bookmark\" aria-hidden=\"true\"></i>Subjects </a></li>
+                <li ><a href=\"#exampledropdownDropdown\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-book\" aria-hidden=\"true\"></i>Course </a>
+                    <ul id=\"exampledropdownDropdown\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('show-courses') }}\">Show Courses</a></li>
+                        <li><a href=\"{{ path('create-course') }}\">Add course</a></li>
+                    </ul>
+                </li>
+                        <li><a href=\"#classee\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-users\" aria-hidden=\"true\"></i>Classes </a>
+                    <ul id=\"classee\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('class_add') }}\">Insert Class</a></li>
+                        <li><a href=\"{{ path('class_read') }}\">List of Classes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href=\"#timeTablee\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>
+                        Time Table </a>
+                    <ul id=\"timeTablee\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('class_addTimeTable') }}\">Insert Time Table</a></li>
+                        <li><a href=\"{{ path('class_searchTimeTable') }}\">Search Time Table</a></li>
+
+
+
+                    </ul>
+                </li>
+                <li><a href=\"#classes\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-cubes\" aria-hidden=\"true\"></i>Clubs </a>
+                    <ul id=\"classes\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('club_Add') }}\">Add club</a></li>
+                        <li><a href=\"{{ path('club_display') }}\">Display clubs</a></li>
+                    </ul>
+                </li>
+
+                <li><a href=\"#timeTables\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-trophy\" aria-hidden=\"true\"></i>Activities</a>
+                    <ul id=\"timeTables\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('club_AddA') }}\">Add activities</a></li>
+                        <li><a href=\"{{ path('club_displayActivity') }}\">Display activities</a></li>
+
+            </ul>
+                <li><a href=\"#notification\" aria-expanded=\"false\" data-toggle=\"collapse\"><i class=\"fa fa-bell\" aria-hidden=\"true\"></i>Notifications </a>
+                    <ul id=\"notification\" class=\"collapse list-unstyled \">
+                        <li><a href=\"{{ path('binaddot') }}\">Add notifications</a></li>
+                        <li><a href=\"{{ path('listnot') }}\">List of notifications</a></li>
+                        <li><a href=\"{{ path('searchnot') }}\">Search Notification</a></li>
+                    </ul>
+                </li>
+
+                    <li><a href=\"#abscense\" aria-expanded=\"false\" data-toggle=\"collapse\"> <i class=\"fa fa-exclamation-circle\" aria-hidden=\"true\"></i>Abscenses </a>
+                        <ul id=\"abscense\" class=\"collapse list-unstyled \">
+                            <li><a href=\"{{ path('binaddabs') }}\">Add Abscense</a></li>
+                            <li><a href=\"{{ path('listabsences') }}\">List of abscenses</a></li>
+                            <li><a href=\"{{ path('searchabscenses') }}\">Search Abscenss</a></li>
+
+                        </ul>
+                    </li>
+
         </nav>
         <div class=\"content-inner\">
             <!-- Page Header-->
@@ -537,19 +587,7 @@ class __TwigTemplate_466cab40d4f2df6bae72780ca09b06c3ca273d9735af164c129cdcbe0e2
 
 
             <!-- Page Footer-->
-            <footer class=\"main-footer\">
-                <div class=\"container-fluid\">
-                    <div class=\"row\">
-                        <div class=\"col-sm-6\">
-                            <p>Your company &copy; 2017-2019</p>
-                        </div>
-                        <div class=\"col-sm-6 text-right\">
-                            <p>Design by <a href=\"https://bootstrapious.com/p/admin-template\" class=\"external\">Bootstrapious</a></p>
-                            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-                        </div>
-                    </div>
-                </div>
-            </footer>
+
         </div>
     </div>
 </div>

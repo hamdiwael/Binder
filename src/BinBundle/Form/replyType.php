@@ -23,8 +23,8 @@ class replyType extends AbstractType
                 'choice_label'=>'name',
                 'multiple'=>false,
                 'expanded'=> false))
-            ->add('receiver' ,EntityType::class,array('class'=>'BinBundle:teacher',
-                'choice_label'=>'name',
+            ->add('receiver' ,EntityType::class,array('class'=>'ExamsBundle:teacher',
+                'choice_label'=>'fullname',
                 'multiple'=>false,
                 'expanded'=> false))
             ->add('content')

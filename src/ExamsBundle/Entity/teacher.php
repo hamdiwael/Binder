@@ -29,7 +29,6 @@ class teacher
     private $fullname;
 
 
-
     /**
      * @var string
      *
@@ -58,6 +57,42 @@ class teacher
      */
     private $specialty;
 
+    /**
+     * @var int
+     * @ORM\Column(name="id_user", type="integer")
+     * @ORM\OneToMany(targetEntity="user", mappedBy="teacher")
+     */
+
+    private $iduser;
+
+
+
+
+
+    public function __construct()
+    {
+        $this->clubs = new ArrayCollection();
+    }
+
+    /**
+     * @return int
+     */
+    public function getIduser()
+    {
+        return $this->iduser;
+    }
+
+    /**
+     * @param int $iduser
+     */
+    public function setIduser($iduser)
+    {
+        $this->iduser = $iduser;
+    }
+
+
+
+
 
     /**
      * Get id
@@ -68,7 +103,10 @@ class teacher
     {
         return $this->id;
     }
-
+    public function __toString()
+    {
+        return $this->fullname;
+    }
     /**
      * Set fullname
      *
@@ -190,5 +228,5 @@ class teacher
     {
         return $this->specialty;
     }
-}
 
+}

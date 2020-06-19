@@ -489,6 +489,6 @@ class __TwigTemplate_0cfd0e5a5fecabe0223ced88a451cc0f8ad9b673c72032b3353cc4c65ff
         {% endif %}
     </div>
 </div>
-", "@Twig/Exception/exception.html.twig", "/home/wael/34/binder/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/exception.html.twig");
+", "@Twig/Exception/exception.html.twig", "/home/wael/34/integration/web/Binder/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/exception.html.twig");
     }
 }

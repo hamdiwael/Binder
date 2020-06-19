@@ -3,6 +3,7 @@
 namespace ClubBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Activity
@@ -38,7 +39,7 @@ class Activity
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date", type="datetime")
+     * @ORM\Column(name="dateA", type="datetime")
      */
     private $date;
 
@@ -48,6 +49,36 @@ class Activity
      * @ORM\Column(name="duration", type="string", length=255)
      */
     private $duration;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="clubAC", type="string", length=255)
+     */
+    private $clubac;
+    /**
+     * @ORM\ManyToOne(targetEntity="Club")
+     * @ORM\JoinColumn(name="id_club",referencedColumnName="id")
+     */
+    private $club;
+
+    /**
+     * @return string
+     */
+    public function getClubac()
+    {
+        return $this->clubac;
+    }
+
+    /**
+     * @param string $clubac
+     */
+    public function setClubac($clubac)
+    {
+        $this->clubac = $clubac;
+    }
+
+
 
 
     /**
@@ -156,11 +187,7 @@ class Activity
         return $this->duration;
     }
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Club")
-     * @ORM\JoinColumn(name="id_club",referencedColumnName="id")
-     */
-    private $club;
+
 
     /**
      * @return mixed
@@ -184,6 +211,9 @@ class Activity
     {
         return $this->about;
     }
-
+    public function __construct()
+    {
+        $this->date = new \DateTime('now');
+    }
 }
 

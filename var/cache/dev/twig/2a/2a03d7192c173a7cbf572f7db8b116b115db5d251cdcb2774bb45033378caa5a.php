@@ -220,6 +220,6 @@ class __TwigTemplate_c402ccecd2c0fe6b0ea6e39469b07e806430805a33e60d90f831f6036d0
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/home/wael/34/binder/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/home/wael/34/integration/web/Binder/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/exception.html.twig");
     }
 }

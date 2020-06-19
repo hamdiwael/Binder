@@ -1,4 +1,4 @@
-{% extends 'baseBack.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
     {% set urlc= app.request.uri %}
 
@@ -10,7 +10,7 @@
     {% if club.id == res %}
         <center>
 
-        <img src="{{ asset('images/') }}{{ club.nomImage }}"style="width: 150px;height: 150px">
+
 
         <h1>{{ club.name }}</h1>
         <p>{{ club.specialty }}</p>
@@ -71,6 +71,8 @@
                                 </tbody>
                             </table>
                         </div>
+
+                        <li> <a href="{{ path('export') }}">export</a> </li>
                     </div>
                     <!-- page end-->
                 </div>

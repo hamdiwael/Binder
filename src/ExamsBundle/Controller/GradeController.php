@@ -9,13 +9,22 @@ use Symfony\Component\HttpFoundation\Request;
 
 class GradeController extends Controller
 {
-    public function readAction() {
+    public function readAction(Request $request) {
         $listgrades= $this->getDoctrine()->getManager()->getRepository(grade::class)->findAll();
-        return ($this->render('@Exams/grade/listforback.html.twig',array("listgrades" =>$listgrades)));
+        /**
+         * @ar $paginator  \Knp\Component\Pager\Paginator
+         */
+        $paginator = $this->get('knp_paginator');
+        $result = $paginator->paginate(
+            $listgrades,
+            $request->query->getInt('page', 1),
+            $request->query->getInt('limit', 5)
+        );
+        return ($this->render('@Exams/grade/listforback.html.twig',array("listgrades" =>$result)));
     }
     public function readerAction() {
-        $user = $this->getUser()->getId();
-        $listgrades= $this->getDoctrine()->getManager()->getRepository(grade::class)->find($user);
+
+        $listgrades= $this->getDoctrine()->getManager()->getRepository(grade::class)->findAll();
         return ($this->render('@Exams/grade/liste.html.twig',array("listgrades" =>$listgrades)));
     }
     public function createAction(Request $request){

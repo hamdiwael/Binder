@@ -36,7 +36,7 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = ['nomImage' => NULL];
+    public static $lazyPropertiesDefaults = [];
 
 
 
@@ -46,60 +46,16 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __construct($initializer = null, $cloner = null)
     {
-        unset($this->nomImage);
 
         $this->__initializer__ = $initializer;
         $this->__cloner__      = $cloner;
     }
 
-    /**
-     * 
-     * @param string $name
-     */
-    public function __get($name)
-    {
-        if (array_key_exists($name, $this->__getLazyProperties())) {
-            $this->__initializer__ && $this->__initializer__->__invoke($this, '__get', [$name]);
 
-            return $this->$name;
-        }
 
-        trigger_error(sprintf('Undefined property: %s::$%s', __CLASS__, $name), E_USER_NOTICE);
-    }
 
-    /**
-     * 
-     * @param string $name
-     * @param mixed  $value
-     */
-    public function __set($name, $value)
-    {
-        if (array_key_exists($name, $this->__getLazyProperties())) {
-            $this->__initializer__ && $this->__initializer__->__invoke($this, '__set', [$name, $value]);
 
-            $this->$name = $value;
 
-            return;
-        }
-
-        $this->$name = $value;
-    }
-
-    /**
-     * 
-     * @param  string $name
-     * @return boolean
-     */
-    public function __isset($name)
-    {
-        if (array_key_exists($name, $this->__getLazyProperties())) {
-            $this->__initializer__ && $this->__initializer__->__invoke($this, '__isset', [$name]);
-
-            return isset($this->$name);
-        }
-
-        return false;
-    }
 
     /**
      * 
@@ -108,10 +64,10 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'id', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'name', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'teacher', 'file', 'nomImage', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'specialty', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'responsible', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'members', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'participation'];
+            return ['__isInitialized__', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'id', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'name', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'specialty', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'responsible'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'id', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'name', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'teacher', 'file', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'specialty', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'responsible', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'members', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'participation'];
+        return ['__isInitialized__', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'id', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'name', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'specialty', '' . "\0" . 'ClubBundle\\Entity\\Club' . "\0" . 'responsible'];
     }
 
     /**
@@ -133,7 +89,6 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
                 }
             };
 
-            unset($this->nomImage);
         }
     }
 
@@ -221,28 +176,6 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getTeacher()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getTeacher', []);
-
-        return parent::getTeacher();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setTeacher($teacher)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTeacher', [$teacher]);
-
-        return parent::setTeacher($teacher);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -319,94 +252,6 @@ class Club extends \ClubBundle\Entity\Club implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getResponsible', []);
 
         return parent::getResponsible();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setMembers($members)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setMembers', [$members]);
-
-        return parent::setMembers($members);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getMembers()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMembers', []);
-
-        return parent::getMembers();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getWebPath()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getWebPath', []);
-
-        return parent::getWebPath();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function uploadProfilePicture()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'uploadProfilePicture', []);
-
-        return parent::uploadProfilePicture();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setNomImage($nomImage)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNomImage', [$nomImage]);
-
-        return parent::setNomImage($nomImage);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getNomImage()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNomImage', []);
-
-        return parent::getNomImage();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getParticipation()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getParticipation', []);
-
-        return parent::getParticipation();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setParticipation($participation)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setParticipation', [$participation]);
-
-        return parent::setParticipation($participation);
     }
 
 }

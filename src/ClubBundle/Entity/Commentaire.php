@@ -70,6 +70,7 @@ class Commentaire
      * @return string
      */
     public function getContenue()
+
     {
         return $this->contenue;
     }

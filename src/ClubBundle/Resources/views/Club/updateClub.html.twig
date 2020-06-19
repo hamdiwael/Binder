@@ -1,10 +1,15 @@
 
-{% extends 'baseBack.html.twig' %}
+{% extends 'base2.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% block content %}
-<section id="main-content">
-    <section class="wrapper">
-        <div class="row">
+    <section id="main-content">
+        <section class="wrapper">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center justify-content-center">
+                        <div class="col-md-9 ftco-animate text-center">
 
-    {{ form (form) }}
+                            {{ form (form) }}</div></div></div>
         </div> </section> </section>
 {% endblock %}

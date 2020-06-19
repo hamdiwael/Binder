@@ -1,15 +1,25 @@
 {% extends 'base.html.twig' %}
 {% block content %}
+    <section class="hero-wrap hero-wrap-2" style="background-image:"{{ asset('web/images/bg_2.jpg') }}";">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread">List of notifications</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Check notifications <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+        </div>
+    </div>
+    </section>
+<div class="container">
 
-    <br/><br/><br/><br/>
-<center><h3>List of notifications </h3></center>
 <table class="table table-striped" >
 
         <thead>
-            <th>category</th>
-            <th>sender</th>
-            <th>receiver</th>
-            <th>content</th>
+            <th>Category</th>
+            <th>Sender</th>
+            <th>Receiver</th>
+            <th>Content</th>
 
             <th></th>
         </thead>
@@ -21,16 +31,8 @@
                 <td>{{ n.receiver }}</td>
                 <td>{{ n.content}}</td>
                 <td>
-                <td><a style=" background-color: #6dc8c4;color: white;
-                    padding: 5px 10px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;" href="{{ path('traitnot',{"id":n.id}) }}">treat</a>
-                <a style=" background-color: #8B0000;color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;" href="{{ path('shownot',{"id":n.id}) }}">Details</a></td>
+                <td><a  class ="btn btn-primary btn-md" href="{{ path('traitnot',{"id":n.id}) }}">Treat</a>
+                <a  class ="btn btn-success btn-md" href="{{ path('shownot',{"id":n.id}) }}">Details</a></td>
 
 
 

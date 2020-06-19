@@ -49,7 +49,7 @@ class Participation
         $this->pupil = $pupil;
     }
     /**
-     * @ORM\ManyToOne(targetEntity="Pupil", inversedBy="participation")
+     * @ORM\ManyToOne(targetEntity="BinBundle\Entity\pupil", inversedBy="participation")
      * @ORM\JoinColumn(name="Pupil_id", referencedColumnName="id")
      * @Assert\NotBlank()
      */

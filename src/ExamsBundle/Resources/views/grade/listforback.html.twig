@@ -12,21 +12,22 @@
         </form>
     </div>
 
-        <div class=table-responsive">
-            <table class="table-hover table"  border="1">
+    <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
+
+        <table class="table-hover table"  border="1">
                     <tr>
 
-                        <th>{{  knp_pagination_sortable(pagination, 'subject', 'ex.idExam.subject') }}</th>
-                        <th>{{  knp_pagination_sortable(pagination, 'teacher', 'ex.teacher.fullname') }}</th>
-                        <th>{{  knp_pagination_sortable(pagination, 'pupil', 'ex.pupil.fullname') }}</th>
-                        <th>{{  knp_pagination_sortable(pagination, 'grade', 'ex.grade') }}</th>
+                        <th>subject</th>
+                        <th>teacher</th>
+                        <th>pupil</th>
+                        <th>grade</th>
 
                     </tr>
-                    {% for grade in pagination %} <tr>
+                    {% for grade in listgrades %} <tr>
 
                         <td>{{ grade.examname.subject }}</td>
-                        <td>{{ grade.teacher.fullname}}</td>
-                        <td>{{ grade.pupil.fullname}}</td>
+                       <td>{{ grade.teacher}}</td>
+                        <td>{{ grade.pupil.name}}</td>
                         <td>{{ grade.grade}}</td>
                         <td> <a href="{{ path('updategrades',{'id':grade.idg}) }}" class ="btn btn-primary btn-sm">Update</a></td>
                         <td> <a href="{{ path('deletegrades',{'id':grade.idg}) }}" class ="btn btn-warning btn-sm">Delete</a></td>
@@ -35,7 +36,7 @@
 
                     {% endfor %} </table>
             <div class="navigation">
-                {{ knp_pagination_render(pagination) }}
+                {{ knp_pagination_render(listgrades) }}
             </div></div>
         </div>
 

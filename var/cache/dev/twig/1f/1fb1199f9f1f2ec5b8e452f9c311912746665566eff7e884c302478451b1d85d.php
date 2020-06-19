@@ -99,6 +99,6 @@ class __TwigTemplate_2f06ba260d4f0c2f34aa3b58aa29a4bc95893eebab5d482db835eb4945a
 {% block fos_user_content %}
     {{ include('@FOSUser/Security/login_content.html.twig') }}
 {% endblock fos_user_content %}
-", "@FOSUser/Security/login.html.twig", "/home/wael/34/binder/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig");
+", "@FOSUser/Security/login.html.twig", "/home/wael/34/finalweb/Binder/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig");
     }
 }

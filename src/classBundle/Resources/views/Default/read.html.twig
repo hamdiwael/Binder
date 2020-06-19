@@ -1,24 +1,28 @@
 
-{% extends 'baseback.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
 <html>
 <head>
     <title>class</title></head>
 <body>
 
-<center>
 
-<fieldset style="width: 30%">
+
+<fieldset style="width: 95%">
 <br>
     <br>
-                       <h1><h1> <strong>List of Class</strong></h1></h1>
-    <br>
-                        <table border="1" width="70%">
+                       <h1><h1> <strong>List of classes</strong></h1></h1>
+
+        <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
+
+            <table class="table-hover table"  border="1">
+
+
                             <tr>
                                 <th>Classes</th>
-                                <th>Pupils</th>
-                                <th>Delete</th>
-                                <th>Update</th>
+                                <th>Session</th>
+                                <th></th>
+                                <th></th>
 
                             </tr>
                         {% for classe in classe  %}
@@ -29,8 +33,8 @@
                                 <td>{{ classe.nbPupils }}         </td>
 
 
-                                <td class="col-md-2"><a  href="{{ path('class_delete',{"id":classe.id}) }}">Delete</a></td>
-                                <td class="col-md-2"><a  href="{{ path('class_update',{"id":classe.id}) }}">Update</a></td>
+                                <td ><a class="btn btn-danger btn-sm" href="{{ path('class_delete',{"id":classe.id}) }}">Delete</a></td>
+                                <td ><a  class="btn btn-warning btn-sm" href="{{ path('class_update',{"id":classe.id}) }}">Update</a></td>
 
 
                         {% endfor %}

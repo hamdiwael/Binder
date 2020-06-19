@@ -7,7 +7,7 @@ use CalendrierMedecinsBundle\Form\searchType;
 use classBundle\Entity\classe;
 use classBundle\Entity\timetable;
 use classBundle\Entity\Ttable;
-use classBundle\Entity\Ttime;
+use classBundle\Entity\Ttimee;
 use classBundle\Form\addTimeTableType;
 use classBundle\Form\classeType;
 use classBundle\Form\createTimeTableType;
@@ -120,7 +120,7 @@ class classeController extends Controller
     public function createTtableAction(Request $request)
     {
         //create an object to store our data after the form submission
-        $table=new Ttime();
+        $table=new Ttimee();
         //prepare the form with the function: createForm()
         $form=$this->createForm(createTimeTableType::class,$table);
         //extract the form answer from the received request
@@ -206,21 +206,6 @@ class classeController extends Controller
 
     }
 
-    public function searchTtimeAction(Request $request)
-    {
-        $time = new Ttime();//instance d'entity
-        $form= $this->createForm(searchTtime::class,$time);
-        $form->handleRequest($request);
-        if($form->isSubmitted()){
-            $time = $this->getDoctrine()->getManager()->getRepository(Ttime::class)
-                ->findBy(array('subject'=>$time->getSubject(),'day'=>$time->getDay(),'time'=>$time->getTime(),'classe'=>$time->getClasse()));
-        }
-        else{
-            $time = $this->getDoctrine()->getManager()->getRepository(Ttime::class)->findAll();
-        }
-        return $this->render("@class/Default/searchTtime.html.twig",array("form"=>$form->createView(),'time'=>$time));
-
-    }
 
 
 
@@ -229,39 +214,15 @@ class classeController extends Controller
 
 
 
-    public function indexmAction(Request $request)
-    {
-        $time = new Ttime();
-        $form = $this->createForm(readTtimeType::class, $time);
-        $form->handleRequest($request);
-        $timeTable = $this->getDoctrine()->getManager()->getRepository(Ttime::class)->findBy(array(),array('day'=>'ASC'));
-        // replace this example code with whatever you need
-
-        $snappy = $this->get('knp_snappy.pdf');
-
-        $html = $this->renderView('@class/Default/index.html.twig', array("form"=>$form->createView(),'time'=>$timeTable )
-        );
-
-        $filename = 'time-table';
-
-        return new Response(
-            $snappy->getOutputFromHtml($html),
-            200,
-            array(
-                'Content-Type'          => 'application/pdf',
-                'Content-Disposition'   => 'inline; filename="'.$filename.'.pdf"'
-            )
-        );
-    }
 
 
     public function readTimeAction(Request $request)
     {
 
-        $time = new Ttime();
+        $time = new Ttimee();
         $form = $this->createForm(readTtimeType::class, $time);
         $form->handleRequest($request);
-        $timeTable = $this->getDoctrine()->getManager()->getRepository(Ttime::class)->findBy(array(),array('day'=>'ASC'));
+        $timeTable = $this->getDoctrine()->getManager()->getRepository(Ttimee::class)->findBy(array(),array('day'=>'ASC'));
 
       return $this->render('@class/Default/readTtime.html.twig', array("form"=>$form->createView(),'time'=>$timeTable ));
 

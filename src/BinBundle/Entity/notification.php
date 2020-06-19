@@ -57,25 +57,11 @@ class notification
     private $sender;
 
     /**
-     * @return mixed
-     */
-    public function getTeacher()
-    {
-        return $this->teacher;
-    }
-
-    /**
-     * @param mixed $teacher
-     */
-    public function setTeacher($teacher)
-    {
-        $this->teacher = $teacher;
-    }
-    /**
-     * @ORM\ManyToOne(targetEntity="notification",inversedBy="teacher")
+     * @ORM\ManyToOne(targetEntity="ExamsBundle\Entity\teacher",inversedBy="notification")
      * @ORM\JoinColumn(name="teacher_id",referencedColumnName="id")
      */
     private $teacher;
+
     /**
      * @var bool
      *

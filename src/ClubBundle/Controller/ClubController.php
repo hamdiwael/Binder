@@ -32,7 +32,7 @@ class ClubController extends Controller
          $em->flush();
      }
 
-     return $this->render("@Club/Club/Add.html.twig",array('form'=>$form->createView()));
+     return $this->render("@Club/Club/add.html.twig",array('form'=>$form->createView()));
 
     }
 
@@ -234,6 +234,20 @@ class ClubController extends Controller
             'activity'=>$activity,'form'=>$form->createView(),'commentaires'=>$commentaires//,'nbr'=>$nbr,
         ]);
     }
+
+    public function exportAction(){
+        $em = $this->getDoctrine()->getManager();
+$activity =$em->getRepository('ClubBundle:Activity')->findAll();
+
+$writer = $this->container->get('egyg33k.csv.writer');
+$csv = $writer::createFromFileObject(new \SplTempFileObject());
+$csv->insertOne(['about', 'location','duration']);
+foreach ($activity as $activity){
+    $csv->insertOne([$activity->getAbout(),$activity->getLocation(),$activity->getDuration()]);
+}
+$csv->output('Activity.csv');
+die('export');
+}
 
 
 }

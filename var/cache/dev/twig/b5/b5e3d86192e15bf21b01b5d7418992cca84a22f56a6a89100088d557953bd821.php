@@ -89,7 +89,10 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
         // line 8
         echo "
 
-<section class=\"hero-wrap hero-wrap-2\" style=\"background-image: url('web/images/bg_2.jpg');\">
+<section class=\"hero-wrap hero-wrap-2\" style=\"background-image:\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("web/images/bg_2.jpg"), "html", null, true);
+        echo "\";\">
     <div class=\"overlay\"></div>
     <div class=\"container\">
         <div class=\"row no-gutters slider-text align-items-center justify-content-center\">
@@ -104,9 +107,9 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
     <br/>
 </section>
 <section>
-    <div class=\"row justify-content-center mb-5 pb-2 \">
-        <div class=table-responsive\">
-<table border=\"1\">
+    <div class=\"container\">
+    <div class=\"row justify-content-center\">
+        <table class=\"table table-striped table-hover table-bordered table-inbox table-condensed\" >
     <tr>
 
         <th>Subject</th>
@@ -128,11 +131,11 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
             echo "</td>
         <td>";
             // line 39
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["grade"], "teacher", []), "fullname", []), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["grade"], "teacher", []), "html", null, true);
             echo "</td>
         <td>";
             // line 40
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["grade"], "pupil", []), "fullname", []), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["grade"], "pupil", []), "name", []), "html", null, true);
             echo "</td>
         <td>";
             // line 41
@@ -174,7 +177,7 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
 
     public function getDebugInfo()
     {
-        return array (  152 => 47,  143 => 44,  139 => 41,  135 => 40,  131 => 39,  127 => 38,  120 => 36,  90 => 8,  81 => 7,  70 => 6,  66 => 5,  61 => 4,  52 => 3,  30 => 1,);
+        return array (  155 => 47,  146 => 44,  142 => 41,  138 => 40,  134 => 39,  130 => 38,  123 => 36,  94 => 10,  90 => 8,  81 => 7,  70 => 6,  66 => 5,  61 => 4,  52 => 3,  30 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -196,7 +199,7 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
 {% block content %}
 
 
-<section class=\"hero-wrap hero-wrap-2\" style=\"background-image: url('web/images/bg_2.jpg');\">
+<section class=\"hero-wrap hero-wrap-2\" style=\"background-image:\"{{ asset('web/images/bg_2.jpg') }}\";\">
     <div class=\"overlay\"></div>
     <div class=\"container\">
         <div class=\"row no-gutters slider-text align-items-center justify-content-center\">
@@ -211,9 +214,9 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
     <br/>
 </section>
 <section>
-    <div class=\"row justify-content-center mb-5 pb-2 \">
-        <div class=table-responsive\">
-<table border=\"1\">
+    <div class=\"container\">
+    <div class=\"row justify-content-center\">
+        <table class=\"table table-striped table-hover table-bordered table-inbox table-condensed\" >
     <tr>
 
         <th>Subject</th>
@@ -225,8 +228,8 @@ class __TwigTemplate_919aef85df5ac450e05d892fc2ac32136c6188eee994b29a3a1102daf46
     {% for grade in listgrades %} <tr>
 
         <td>{{ grade.examname.subject }}</td>
-        <td>{{ grade.teacher.fullname}}</td>
-        <td>{{ grade.pupil.fullname}}</td>
+        <td>{{ grade.teacher}}</td>
+        <td>{{ grade.pupil.name}}</td>
         <td>{{ grade.grade}}</td>
         {#<td> <a href=\"{{ path('updategrades',{'id':grade.idg}) }}\">Update</a></td>
         <td> <a href=\"{{ path('deletegrades',{'id':grade.idg}) }}\">Delete</a></td>#}

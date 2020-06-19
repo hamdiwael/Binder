@@ -3,6 +3,7 @@
 namespace BinBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * abscense
@@ -53,12 +54,13 @@ class abscense
 
     /**
      * @var \DateTime
+     *  @var string
      *
-     * @ORM\Column(name="date", type="date")
+     * @ORM\Column(name="date", type="string")
      */
     private $date;
     /**
-     * @ORM\ManyToOne(targetEntity="abscense",inversedBy="subjectt")
+     * @ORM\ManyToOne(targetEntity="CourseBundle\Entity\Subject",inversedBy="subjectt")
      * @ORM\JoinColumn(name="subjectt_id",referencedColumnName="id")
      */
     private $subjectt;
@@ -111,7 +113,7 @@ class abscense
         $this->groupee = $groupee;
     }
     /**
-     * @ORM\ManyToOne(targetEntity="abscense",inversedBy="groupee")
+     * @ORM\ManyToOne(targetEntity="ExamsBundle\Entity\classes",inversedBy="groupee")
      * @ORM\JoinColumn(name="groupee_id",referencedColumnName="id")
      */
     private $groupee;
@@ -143,7 +145,7 @@ class abscense
      * @ORM\JoinColumn(name="notification_id",referencedColumnName="id")
      */
 
-private $notification;
+    private $notification;
 
     /**
      * @return mixed
@@ -273,5 +275,47 @@ private $notification;
         return $this->subject;
     }
 
-}
 
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="hour", type="string")
+     */
+    private $hour;
+    /**
+     * @return mixed
+     */
+    /* public function getSeance()
+     {
+         return $this->seance;
+     }
+     /**
+      * @param mixed $seance
+      */
+    /* public function setSeance($seance)
+     {
+         $this->seance = $seance;
+     }
+     /**
+      * @ORM\ManyToOne(targetEntity="abscense",inversedBy="seance")
+      * @ORM\JoinColumn(name="seance_id",referencedColumnName="id")
+      */
+    //  private $seance;
+    /**
+     * @return string
+     */
+    public function isHour()
+    {
+        return $this->hour;
+    }
+    /**
+     * @param string $hour
+     */
+    public function setHour($hour)
+    {
+        $this->hour = $hour;
+    }
+
+}

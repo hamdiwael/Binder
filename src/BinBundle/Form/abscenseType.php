@@ -15,20 +15,19 @@ class abscenseType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('pupl',EntityType::class,array('class'=>'BinBundle:abscense',
-            'choice_label'=>'pupl',
+        $builder->add('pupl',EntityType::class,array('class'=>'BinBundle:pupil',
+            'choice_label'=>'name',
             'multiple'=>false,
             'expanded'=> false))
-            ->add('groupe',EntityType::class,array('class'=>'BinBundle:groupee',
-                'choice_label'=>'name',
-                'multiple'=>false,
-                'expanded'=> false))
+
+            ->add('groupe')
             ->add('nbr')
             ->add('date')
-            ->add('subject',EntityType::class,array('class'=>'BinBundle:subjectt',
+            ->add('subject',EntityType::class,array('class'=>'CourseBundle:Subject',
         'choice_label'=>'name',
         'multiple'=>false,
         'expanded'=> false))
+            ->add('hour')
             ->add('add',SubmitType::class);
     }/**
      * {@inheritdoc}

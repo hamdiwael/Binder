@@ -19,13 +19,13 @@ class calendarType extends AbstractType
             'choice_label'=>'pupl',
             'multiple'=>false,
             'expanded'=> false))
-            ->add('groupe',EntityType::class,array('class'=>'BinBundle:groupee',
-                'choice_label'=>'name',
+            ->add('groupe',EntityType::class,array('class'=>'ExamsBundle:classes',
+                'choice_label'=>'nom',
                 'multiple'=>false,
                 'expanded'=> false))
             ->add('nbr')
             ->add('date')
-            ->add('subject',EntityType::class,array('class'=>'BinBundle:subjectt',
+            ->add('subject',EntityType::class,array('class'=>'CourseBundle:Subject',
         'choice_label'=>'name',
         'multiple'=>false,
         'expanded'=> false))

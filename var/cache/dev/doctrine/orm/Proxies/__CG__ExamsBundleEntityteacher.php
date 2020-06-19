@@ -64,10 +64,10 @@ class teacher extends \ExamsBundle\Entity\teacher implements \Doctrine\ORM\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'id', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'fullname', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'email', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'password', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'phonenumber', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'specialty'];
+            return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'id', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'fullname', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'email', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'password', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'phonenumber', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'specialty', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'iduser'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'id', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'fullname', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'email', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'password', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'phonenumber', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'specialty'];
+        return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'id', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'fullname', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'email', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'password', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'phonenumber', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'specialty', '' . "\0" . 'ExamsBundle\\Entity\\teacher' . "\0" . 'iduser'];
     }
 
     /**
@@ -176,6 +176,28 @@ class teacher extends \ExamsBundle\Entity\teacher implements \Doctrine\ORM\Proxy
     /**
      * {@inheritDoc}
      */
+    public function getIduser()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIduser', []);
+
+        return parent::getIduser();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setIduser($iduser)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIduser', [$iduser]);
+
+        return parent::setIduser($iduser);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -186,6 +208,17 @@ class teacher extends \ExamsBundle\Entity\teacher implements \Doctrine\ORM\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function __toString()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__toString', []);
+
+        return parent::__toString();
     }
 
     /**

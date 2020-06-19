@@ -1,3 +1,61 @@
 class_homepage:
     path:     /
-    defaults: { _controller: classBundle:Default:index }
+    defaults: { _controller: classBundle:Default:home }
+
+class_add:
+    path:     /admin/add
+    defaults: { _controller: classBundle:classe:add }
+class_read:
+    path:     /read
+    defaults: { _controller: classBundle:classe:read }
+
+class_delete:
+    path:     /admin/delete/{id}
+    defaults: { _controller: classBundle:classe:delete }
+class_update:
+    path:     /admin/update/{id}
+    defaults: { _controller: classBundle:classe:update }
+class_addTimeTable:
+    path:     /admin/addTimeTable
+    defaults: { _controller: classBundle:classe:addTimeTable }
+class_readTimeTable:
+    path:     /readTimeTable
+    defaults: { _controller: classBundle:classe:readTimeTable }
+class_deleteTimeTable:
+    path:     /admin/deleteTimeTable/{id}
+    defaults: { _controller: classBundle:classe:deleteTimeTable }
+class_updateTimeTable:
+    path:     /admin/updateTimeTable/{id}
+    defaults: { _controller: classBundle:classe:updateTimeTable }
+class_searchTimeTable:
+    path:     /searchTimeTable
+    defaults: { _controller: classBundle:classe:searchTimeTable }
+class_home:
+    path:     /home
+    defaults: { _controller: classBundle:Default:home }
+class_pdf:
+    path:     /pdfM
+    defaults: { _controller: classBundle:classe:indexm }
+class_createTtable:
+    path:     /createTtable
+    defaults: { _controller: classBundle:classe:createTtable }
+class_Ttime:
+    path:     /readT
+    defaults: { _controller: classBundle:classe:readTime }
+class_searchTtime:
+    path:     /searchT
+    defaults: { _controller: classBundle:classe:readTimeTable }
+
+
+class_readClass:
+    path:     /listClassFront
+    defaults: { _controller: classBundle:classe:listClassFront }
+
+class_homeFrontpage:
+    path:     /homeFront
+    defaults: { _controller: classBundle:Default:homeFront }
+class_searchTimeTableFront:
+    path:     /searchTimeTableFront
+    defaults: { _controller: classBundle:classe:searchTimeTableFront }
+
+

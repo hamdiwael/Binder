@@ -60,7 +60,7 @@ class searchTtime extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'classBundle\Entity\Ttime'
+            'data_class' => 'classBundle\Entity\Ttimee'
         ));
     }
 

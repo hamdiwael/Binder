@@ -1,8 +1,7 @@
-{% extends 'baseBack.html.twig' %}
+{% extends 'base2.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
 {% block content %}
-    <section id="main-content">
-    <section class="wrapper">
-    <div class="row">
+
 <html>
 <head>
     <title>
@@ -10,9 +9,15 @@
     </title>
 </head>
 <body>
-
+<section id="main-content">
+    <section class="wrapper">
+        <div class="row">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-center">
+                    <div class="col-md-9 ftco-animate text-center">
 <h1>add activity</h1>
-<fieldset style="width: 30%">
+<fieldset >
     {{ form_start(form) }}
 
   about  {{ form_widget(form.about) }}</br>
@@ -22,7 +27,7 @@
     {{ form_widget(form.addActivity) }}
     {{ form_end(form) }}
 </fieldset>
-
+                    </div></div></div></div></section></section>
 </body>
 </html>
     </div> </section> </section>

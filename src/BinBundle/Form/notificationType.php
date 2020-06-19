@@ -19,8 +19,8 @@ class notificationType extends AbstractType
             'choice_label'=>'type',
             'multiple'=>false,
             'expanded'=> false))
-            ->add('sender' ,EntityType::class,array('class'=>'BinBundle:teacher',
-                'choice_label'=>'name',
+            ->add('sender' ,EntityType::class,array('class'=>'ExamsBundle:teacher',
+                'choice_label'=>'fullname',
                 'multiple'=>false,
                 'expanded'=> false))
             ->add('receiver' ,EntityType::class,array('class'=>'BinBundle:parentt',

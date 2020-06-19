@@ -41,38 +41,34 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
         // line 1
         echo "<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"UTF-8\" />
-        <title>";
+<head>
+    <meta charset=\"UTF-8\" />
+    <title>";
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        ";
+    ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 7
-        echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
-        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "    <link rel=\"icon\" type=\"image/x-icon\" href=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("imgg/favicon.ico"), "html", null, true);
         echo "\" />
-    </head>
-    <body>
+</head>
+<body>
 
-    ";
+";
         // line 11
         $this->displayBlock('header', $context, $blocks);
         // line 78
-        echo "        ";
         $this->displayBlock('content', $context, $blocks);
         // line 80
-        echo "    ";
         $this->displayBlock('footer', $context, $blocks);
         // line 131
-        echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
         // line 151
-        echo "    </body>
-</html>
-";
+        echo "</body>
+</html>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -90,7 +86,7 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Bonjour!";
+        echo "Binder | The best school to enhance your child's capabilities";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -127,116 +123,131 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
 
         // line 12
         echo "    <head>
-            <title>Binder</title>
-            <meta charset=\"utf-8\">
-            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
+        <title><strong>Binder</strong></title>
+        <meta charset=\"utf-8\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
 
-            <link href=\"";
+        <link href=\"";
         // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900"), "html", null, true);
         echo " \" rel=\"stylesheet\">
-            <link href=\" ";
+        <link href=\" ";
         // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("https://fonts.googleapis.com/css?family=Fredericka+the+Great"), "html", null, true);
         echo "\" rel=\"stylesheet\">
 
-            <link rel=\"stylesheet\" href=\" ";
+        <link rel=\"stylesheet\" href=\" ";
         // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/open-iconic-bootstrap.min.css"), "html", null, true);
         echo "\">
-            <link rel=\"stylesheet\" href=\" ";
+        <link rel=\"stylesheet\" href=\" ";
         // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/animate.css"), "html", null, true);
         echo "\">
 
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 23
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/owl.carousel.min.css"), "html", null, true);
         echo "\">
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 24
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/owl.theme.default.min.css"), "html", null, true);
         echo "\">
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 25
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/magnific-popup.css"), "html", null, true);
         echo "\">
 
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 27
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/aos.css"), "html", null, true);
         echo "\">
 
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 29
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/ionicons.min.css"), "html", null, true);
         echo "\">
 
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 31
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/flaticon.css"), "html", null, true);
         echo "\">
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 32
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/icomoon.css"), "html", null, true);
         echo "\">
-            <link rel=\"stylesheet\" href=\"";
+        <link rel=\"stylesheet\" href=\"";
         // line 33
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("css/style.css"), "html", null, true);
         echo "\">
     </head>
-        <div class=\"py-2 bg-primary\">
-            <div class=\"container\">
-                <div class=\"row no-gutters d-flex align-items-start align-items-center px-3 px-md-0\">
-                    <div class=\"col-lg-12 d-block\">
-                        <div class=\"row d-flex\">
-                            <div class=\"col-md-5 pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-fifth mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-map\"></span></div>
-                                <span class=\"text\">Tunis Tunisie</span>
-                            </div>
-                            <div class=\"col-md pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-secondary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-paper-plane\"></span></div>
-                                <span class=\"text\">contactus@binder.com</span>
-                            </div>
-                            <div class=\"col-md pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-tertiary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-phone2\"></span></div>
-                                <span class=\"text\">+ 1235 2355 98</span>
-                            </div>
+    <div class=\"py-2 bg-primary\">
+        <div class=\"container\">
+            <div class=\"row no-gutters d-flex align-items-start align-items-center px-3 px-md-0\">
+                <div class=\"col-lg-12 d-block\">
+                    <div class=\"row d-flex\">
+                        <div class=\"col-md-5 pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-fifth mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-map\"></span></div>
+                            <span class=\"text\">Tunis Tunisie</span>
+                        </div>
+                        <div class=\"col-md pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-secondary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-paper-plane\"></span></div>
+                            <span class=\"text\">contactus@binder.com</span>
+                        </div>
+                        <div class=\"col-md pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-tertiary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-phone2\"></span></div>
+                            <span class=\"text\">+ 1235 2355 98</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light\" id=\"ftco-navbar\">
-            <div class=\"container d-flex align-items-center\">
-                <a class=\"navbar-brand\" href=\"index.html\">Binder</a>
-                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#ftco-nav\" aria-controls=\"ftco-nav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"oi oi-menu\"></span> Menu
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"ftco-nav\">
-                    <ul class=\"navbar-nav ml-auto\">
-                        <li class=\"nav-item \"><a href=\"";
+    </div>
+    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light\" id=\"ftco-navbar\">
+        <div class=\"container d-flex align-items-center\">
+            <a class=\"navbar-brand\" href=\"";
+        // line 59
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("exams_homepage");
+        echo "\">Binder</a>
+            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#ftco-nav\" aria-controls=\"ftco-nav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                <span class=\"oi oi-menu\"></span> Menu
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"ftco-nav\">
+                <ul class=\"navbar-nav ml-auto\">
+                    <li class=\"nav-item \"><a href=\"";
         // line 65
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("exams_homepage");
         echo "\" class=\"nav-link pl-0\">Home</a></li>
-                        <li class=\"nav-item\"><a href=\"about.html\" class=\"nav-link\">Courses</a></li>
-                        <li class=\"nav-item\"><a href=\"teacher.html\" class=\"nav-link\">Timetables</a></li>
-                        <li class=\"nav-item\"><a href=\"courses.html\" class=\"nav-link\">Clubs</a></li>
-                        <li class=\"nav-item\"><a href=\"";
+                    <li class=\"nav-item\"><a href=\"about.html\" class=\"nav-link\">Courses</a></li>
+                    <li class=\"nav-item\"><a href=\"";
+        // line 67
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("class_searchTimeTableFront");
+        echo "\" class=\"nav-link\">Timetables</a></li>
+                    <li class=\"nav-item\"><a href=\"";
+        // line 68
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("club_afficheFront");
+        echo "\" class=\"nav-link\">Clubs</a></li>
+                    <li class=\"nav-item\"><a href=\"";
         // line 69
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("affichegrades");
         echo "\" class=\"nav-link\">Grades</a></li>
-                        <li class=\"nav-item\"><a href=\"blog.html\" class=\"nav-link\">Contact us</a></li>
-                        <li class=\"nav-item\"><a href=\"contact.html\" class=\"nav-link\">About us</a></li>
-                        <li class=\"nav-item\"><a href=\"";
+                    <li class=\"nav-item \"><a href=\"";
+        // line 70
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("listabsencesFront");
+        echo "\" class=\"nav-link\">Absences</a></li>
+                    <li class=\"nav-item \"><a href=\"";
+        // line 71
+        echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("listnotFront");
+        echo "\" class=\"nav-link\">Notification</a></li>
+                    <li class=\"nav-item\"><a href=\"";
         // line 72
         echo $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("fos_user_security_login");
         echo "\" class=\"nav-link\">Login</a></li>
-                    </ul>
-                </div>
+                </ul>
             </div>
-        </nav>
-    ";
+        </div>
+    </nav>
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -254,8 +265,6 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 79
-        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -274,56 +283,56 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
         // line 81
-        echo "        <footer class=\"ftco-footer ftco-bg-dark ftco-section\">
-            <div class=\"container\">
-                <div class=\"row mb-5\">
-                    <div class=\"col-md-6 col-lg-3\">
-                        <div class=\"ftco-footer-widget mb-5\">
-                            <h2 class=\"ftco-heading-2\">Have any Questions? Get in touch!</h2>
+        echo "    <footer class=\"ftco-footer ftco-bg-dark ftco-section\">
+        <div class=\"container\">
+            <div class=\"row mb-5\">
+                <div class=\"col-md-6 col-lg-3\">
+                    <div class=\"ftco-footer-widget mb-5\">
+                        <h2 class=\"ftco-heading-2\">Have any Questions? Get in touch!</h2>
 
-                            <div class=\"block-23 mb-3\">
-                                <ul>
-                                    <li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Fake address, Tunis, Tunisia</span></li>
-                                    <li><a href=\"#\"><span class=\"icon icon-phone\"></span><span class=\"text\">(+216)71 258 369 </span></a></li>
-                                    <li><a href=\"#\"><span class=\"icon icon-envelope\"></span><span class=\"text\">contactus@binder.com</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-6 col-lg-3\">
-                        <div class=\"ftco-footer-widget mb-5 ml-md-4\">
-                            <h2 class=\"ftco-heading-2\">Links</h2>
-                            <ul class=\"list-unstyled\">
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Home</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>About us</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Services</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Contact</a></li>
+                        <div class=\"block-23 mb-3\">
+                            <ul>
+                                <li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Fake address, Tunis, Tunisia</span></li>
+                                <li><a href=\"#\"><span class=\"icon icon-phone\"></span><span class=\"text\">(+216)71 258 369 </span></a></li>
+                                <li><a href=\"#\"><span class=\"icon icon-envelope\"></span><span class=\"text\">contactus@binder.com</span></a></li>
                             </ul>
                         </div>
                     </div>
-
-                      <div class=\"center\">
-                        <div class=\"ftco-footer-widget mb-5\">
-                            <h2 class=\"ftco-heading-2 mb-0\">Connect With Us</h2>
-                            <ul class=\"ftco-footer-social list-unstyled float-md-left float-lft mt-3\">
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-twitter\"></span></a></li>
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-facebook\"></span></a></li>
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-instagram\"></span></a></li>
-                            </ul>
-                        </div>
-                      </div> </div>
                 </div>
-                <div class=\"row\">
-                    <div class=\"col-md-12 text-center\">
-
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class=\"icon-heart\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Runtime Terror</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <div class=\"col-md-6 col-lg-3\">
+                    <div class=\"ftco-footer-widget mb-5 ml-md-4\">
+                        <h2 class=\"ftco-heading-2\">Links</h2>
+                        <ul class=\"list-unstyled\">
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Home</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>About us</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Services</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Contact</a></li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class=\"center\">
+                    <div class=\"ftco-footer-widget mb-5\">
+                        <h2 class=\"ftco-heading-2 mb-0\">Connect With Us</h2>
+                        <ul class=\"ftco-footer-social list-unstyled float-md-left float-lft mt-3\">
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-twitter\"></span></a></li>
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-facebook\"></span></a></li>
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-instagram\"></span></a></li>
+                        </ul>
+                    </div>
+                </div> </div>
+        </div>
+        <div class=\"row\">
+            <div class=\"col-md-12 text-center\">
+
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class=\"icon-heart\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Runtime Terror</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
-        </footer>
-    ";
+        </div>
+        </div>
+    </footer>
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -342,70 +351,70 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 132
-        echo "            <div id=\"ftco-loader\" class=\"show fullscreen\"><svg class=\"circular\" width=\"48px\" height=\"48px\"><circle class=\"path-bg\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke=\"#eeeeee\"/><circle class=\"path\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke-miterlimit=\"10\" stroke=\"#F96D00\"/></svg></div>
+        echo "    <div id=\"ftco-loader\" class=\"show fullscreen\"><svg class=\"circular\" width=\"48px\" height=\"48px\"><circle class=\"path-bg\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke=\"#eeeeee\"/><circle class=\"path\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke-miterlimit=\"10\" stroke=\"#F96D00\"/></svg></div>
 
 
-            <script src=\"";
+    <script src=\"";
         // line 135
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 136
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery-migrate-3.0.1.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 137
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/popper.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 138
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 139
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.easing.1.3.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 140
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.waypoints.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 141
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.stellar.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 142
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 143
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.magnific-popup.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 144
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/aos.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 145
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/jquery.animateNumber.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 146
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/scrollax.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 147
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 148
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/google-map.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"";
+    <script src=\"";
         // line 149
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/main.js"), "html", null, true);
         echo "\"></script>
-        ";
+";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -426,7 +435,7 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
 
     public function getDebugInfo()
     {
-        return array (  406 => 149,  402 => 148,  398 => 147,  394 => 146,  390 => 145,  386 => 144,  382 => 143,  378 => 142,  374 => 141,  370 => 140,  366 => 139,  362 => 138,  358 => 137,  354 => 136,  350 => 135,  345 => 132,  336 => 131,  277 => 81,  268 => 80,  258 => 79,  249 => 78,  233 => 72,  227 => 69,  220 => 65,  185 => 33,  181 => 32,  177 => 31,  172 => 29,  167 => 27,  162 => 25,  158 => 24,  154 => 23,  149 => 21,  145 => 20,  140 => 18,  136 => 17,  129 => 12,  120 => 11,  103 => 6,  85 => 5,  73 => 151,  70 => 131,  67 => 80,  64 => 78,  62 => 11,  54 => 7,  52 => 6,  48 => 5,  42 => 1,);
+        return array (  415 => 149,  411 => 148,  407 => 147,  403 => 146,  399 => 145,  395 => 144,  391 => 143,  387 => 142,  383 => 141,  379 => 140,  375 => 139,  371 => 138,  367 => 137,  363 => 136,  359 => 135,  354 => 132,  345 => 131,  286 => 81,  277 => 80,  260 => 78,  244 => 72,  240 => 71,  236 => 70,  232 => 69,  228 => 68,  224 => 67,  219 => 65,  210 => 59,  181 => 33,  177 => 32,  173 => 31,  168 => 29,  163 => 27,  158 => 25,  154 => 24,  150 => 23,  145 => 21,  141 => 20,  136 => 18,  132 => 17,  125 => 12,  116 => 11,  99 => 6,  81 => 5,  70 => 151,  68 => 131,  66 => 80,  64 => 78,  62 => 11,  54 => 7,  52 => 6,  48 => 5,  42 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -441,156 +450,155 @@ class __TwigTemplate_b9ebd22a525c27c0e79e12166c1f854f229682e639adb36e82aa05cab6b
     {
         return new Source("<!DOCTYPE html>
 <html>
+<head>
+    <meta charset=\"UTF-8\" />
+    <title>{% block title %}Binder | The best school to enhance your child's capabilities{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('imgg/favicon.ico') }}\" />
+</head>
+<body>
+
+{% block header %}
     <head>
-        <meta charset=\"UTF-8\" />
-        <title>{% block title %}Bonjour!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ asset('favicon.ico') }}\" />
+        <title><strong>Binder</strong></title>
+        <meta charset=\"utf-8\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
+
+        <link href=\"{{ asset ('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900') }} \" rel=\"stylesheet\">
+        <link href=\" {{ asset ('https://fonts.googleapis.com/css?family=Fredericka+the+Great') }}\" rel=\"stylesheet\">
+
+        <link rel=\"stylesheet\" href=\" {{ asset ('css/open-iconic-bootstrap.min.css') }}\">
+        <link rel=\"stylesheet\" href=\" {{ asset ('css/animate.css') }}\">
+
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/owl.carousel.min.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/owl.theme.default.min.css') }}\">
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/magnific-popup.css') }}\">
+
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/aos.css')}}\">
+
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/ionicons.min.css')}}\">
+
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/flaticon.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/icomoon.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{ asset ('css/style.css')}}\">
     </head>
-    <body>
-
-    {% block header %}
-    <head>
-            <title>Binder</title>
-            <meta charset=\"utf-8\">
-            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">
-
-            <link href=\"{{ asset ('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900') }} \" rel=\"stylesheet\">
-            <link href=\" {{ asset ('https://fonts.googleapis.com/css?family=Fredericka+the+Great') }}\" rel=\"stylesheet\">
-
-            <link rel=\"stylesheet\" href=\" {{ asset ('css/open-iconic-bootstrap.min.css') }}\">
-            <link rel=\"stylesheet\" href=\" {{ asset ('css/animate.css') }}\">
-
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/owl.carousel.min.css') }}\">
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/owl.theme.default.min.css') }}\">
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/magnific-popup.css') }}\">
-
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/aos.css')}}\">
-
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/ionicons.min.css')}}\">
-
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/flaticon.css')}}\">
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/icomoon.css')}}\">
-            <link rel=\"stylesheet\" href=\"{{ asset ('css/style.css')}}\">
-    </head>
-        <div class=\"py-2 bg-primary\">
-            <div class=\"container\">
-                <div class=\"row no-gutters d-flex align-items-start align-items-center px-3 px-md-0\">
-                    <div class=\"col-lg-12 d-block\">
-                        <div class=\"row d-flex\">
-                            <div class=\"col-md-5 pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-fifth mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-map\"></span></div>
-                                <span class=\"text\">Tunis Tunisie</span>
-                            </div>
-                            <div class=\"col-md pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-secondary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-paper-plane\"></span></div>
-                                <span class=\"text\">contactus@binder.com</span>
-                            </div>
-                            <div class=\"col-md pr-4 d-flex topper align-items-center\">
-                                <div class=\"icon bg-tertiary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-phone2\"></span></div>
-                                <span class=\"text\">+ 1235 2355 98</span>
-                            </div>
+    <div class=\"py-2 bg-primary\">
+        <div class=\"container\">
+            <div class=\"row no-gutters d-flex align-items-start align-items-center px-3 px-md-0\">
+                <div class=\"col-lg-12 d-block\">
+                    <div class=\"row d-flex\">
+                        <div class=\"col-md-5 pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-fifth mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-map\"></span></div>
+                            <span class=\"text\">Tunis Tunisie</span>
+                        </div>
+                        <div class=\"col-md pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-secondary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-paper-plane\"></span></div>
+                            <span class=\"text\">contactus@binder.com</span>
+                        </div>
+                        <div class=\"col-md pr-4 d-flex topper align-items-center\">
+                            <div class=\"icon bg-tertiary mr-2 d-flex justify-content-center align-items-center\"><span class=\"icon-phone2\"></span></div>
+                            <span class=\"text\">+ 1235 2355 98</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light\" id=\"ftco-navbar\">
-            <div class=\"container d-flex align-items-center\">
-                <a class=\"navbar-brand\" href=\"index.html\">Binder</a>
-                <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#ftco-nav\" aria-controls=\"ftco-nav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-                    <span class=\"oi oi-menu\"></span> Menu
-                </button>
-                <div class=\"collapse navbar-collapse\" id=\"ftco-nav\">
-                    <ul class=\"navbar-nav ml-auto\">
-                        <li class=\"nav-item \"><a href=\"{{ path('exams_homepage') }}\" class=\"nav-link pl-0\">Home</a></li>
-                        <li class=\"nav-item\"><a href=\"about.html\" class=\"nav-link\">Courses</a></li>
-                        <li class=\"nav-item\"><a href=\"teacher.html\" class=\"nav-link\">Timetables</a></li>
-                        <li class=\"nav-item\"><a href=\"courses.html\" class=\"nav-link\">Clubs</a></li>
-                        <li class=\"nav-item\"><a href=\"{{ path('affichegrades') }}\" class=\"nav-link\">Grades</a></li>
-                        <li class=\"nav-item\"><a href=\"blog.html\" class=\"nav-link\">Contact us</a></li>
-                        <li class=\"nav-item\"><a href=\"contact.html\" class=\"nav-link\">About us</a></li>
-                        <li class=\"nav-item\"><a href=\"{{ path('fos_user_security_login') }}\" class=\"nav-link\">Login</a></li>
-                    </ul>
-                </div>
+    </div>
+    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light\" id=\"ftco-navbar\">
+        <div class=\"container d-flex align-items-center\">
+            <a class=\"navbar-brand\" href=\"{{ path('exams_homepage') }}\">Binder</a>
+            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#ftco-nav\" aria-controls=\"ftco-nav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+                <span class=\"oi oi-menu\"></span> Menu
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"ftco-nav\">
+                <ul class=\"navbar-nav ml-auto\">
+                    <li class=\"nav-item \"><a href=\"{{ path('exams_homepage') }}\" class=\"nav-link pl-0\">Home</a></li>
+                    <li class=\"nav-item\"><a href=\"about.html\" class=\"nav-link\">Courses</a></li>
+                    <li class=\"nav-item\"><a href=\"{{ path('class_searchTimeTableFront') }}\" class=\"nav-link\">Timetables</a></li>
+                    <li class=\"nav-item\"><a href=\"{{ path('club_afficheFront') }}\" class=\"nav-link\">Clubs</a></li>
+                    <li class=\"nav-item\"><a href=\"{{ path('affichegrades') }}\" class=\"nav-link\">Grades</a></li>
+                    <li class=\"nav-item \"><a href=\"{{ path('listabsencesFront') }}\" class=\"nav-link\">Absences</a></li>
+                    <li class=\"nav-item \"><a href=\"{{ path('listnotFront') }}\" class=\"nav-link\">Notification</a></li>
+                    <li class=\"nav-item\"><a href=\"{{ path('fos_user_security_login') }}\" class=\"nav-link\">Login</a></li>
+                </ul>
             </div>
-        </nav>
-    {% endblock %}
-        {% block content %}
-        {% endblock %}
-    {% block footer %}
-        <footer class=\"ftco-footer ftco-bg-dark ftco-section\">
-            <div class=\"container\">
-                <div class=\"row mb-5\">
-                    <div class=\"col-md-6 col-lg-3\">
-                        <div class=\"ftco-footer-widget mb-5\">
-                            <h2 class=\"ftco-heading-2\">Have any Questions? Get in touch!</h2>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+{% endblock %}
+{% block footer %}
+    <footer class=\"ftco-footer ftco-bg-dark ftco-section\">
+        <div class=\"container\">
+            <div class=\"row mb-5\">
+                <div class=\"col-md-6 col-lg-3\">
+                    <div class=\"ftco-footer-widget mb-5\">
+                        <h2 class=\"ftco-heading-2\">Have any Questions? Get in touch!</h2>
 
-                            <div class=\"block-23 mb-3\">
-                                <ul>
-                                    <li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Fake address, Tunis, Tunisia</span></li>
-                                    <li><a href=\"#\"><span class=\"icon icon-phone\"></span><span class=\"text\">(+216)71 258 369 </span></a></li>
-                                    <li><a href=\"#\"><span class=\"icon icon-envelope\"></span><span class=\"text\">contactus@binder.com</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=\"col-md-6 col-lg-3\">
-                        <div class=\"ftco-footer-widget mb-5 ml-md-4\">
-                            <h2 class=\"ftco-heading-2\">Links</h2>
-                            <ul class=\"list-unstyled\">
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Home</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>About us</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Services</a></li>
-                                <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Contact</a></li>
+                        <div class=\"block-23 mb-3\">
+                            <ul>
+                                <li><span class=\"icon icon-map-marker\"></span><span class=\"text\">Fake address, Tunis, Tunisia</span></li>
+                                <li><a href=\"#\"><span class=\"icon icon-phone\"></span><span class=\"text\">(+216)71 258 369 </span></a></li>
+                                <li><a href=\"#\"><span class=\"icon icon-envelope\"></span><span class=\"text\">contactus@binder.com</span></a></li>
                             </ul>
                         </div>
                     </div>
-
-                      <div class=\"center\">
-                        <div class=\"ftco-footer-widget mb-5\">
-                            <h2 class=\"ftco-heading-2 mb-0\">Connect With Us</h2>
-                            <ul class=\"ftco-footer-social list-unstyled float-md-left float-lft mt-3\">
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-twitter\"></span></a></li>
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-facebook\"></span></a></li>
-                                <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-instagram\"></span></a></li>
-                            </ul>
-                        </div>
-                      </div> </div>
                 </div>
-                <div class=\"row\">
-                    <div class=\"col-md-12 text-center\">
-
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class=\"icon-heart\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Runtime Terror</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                <div class=\"col-md-6 col-lg-3\">
+                    <div class=\"ftco-footer-widget mb-5 ml-md-4\">
+                        <h2 class=\"ftco-heading-2\">Links</h2>
+                        <ul class=\"list-unstyled\">
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Home</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>About us</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Services</a></li>
+                            <li><a href=\"#\"><span class=\"ion-ios-arrow-round-forward mr-2\"></span>Contact</a></li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class=\"center\">
+                    <div class=\"ftco-footer-widget mb-5\">
+                        <h2 class=\"ftco-heading-2 mb-0\">Connect With Us</h2>
+                        <ul class=\"ftco-footer-social list-unstyled float-md-left float-lft mt-3\">
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-twitter\"></span></a></li>
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-facebook\"></span></a></li>
+                            <li class=\"ftco-animate\"><a href=\"#\"><span class=\"icon-instagram\"></span></a></li>
+                        </ul>
+                    </div>
+                </div> </div>
+        </div>
+        <div class=\"row\">
+            <div class=\"col-md-12 text-center\">
+
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class=\"icon-heart\" aria-hidden=\"true\"></i> by <a href=\"https://colorlib.com\" target=\"_blank\">Runtime Terror</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             </div>
-        </footer>
-    {% endblock %}
-        {% block javascripts %}
-            <div id=\"ftco-loader\" class=\"show fullscreen\"><svg class=\"circular\" width=\"48px\" height=\"48px\"><circle class=\"path-bg\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke=\"#eeeeee\"/><circle class=\"path\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke-miterlimit=\"10\" stroke=\"#F96D00\"/></svg></div>
+        </div>
+        </div>
+    </footer>
+{% endblock %}
+{% block javascripts %}
+    <div id=\"ftco-loader\" class=\"show fullscreen\"><svg class=\"circular\" width=\"48px\" height=\"48px\"><circle class=\"path-bg\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke=\"#eeeeee\"/><circle class=\"path\" cx=\"24\" cy=\"24\" r=\"22\" fill=\"none\" stroke-width=\"4\" stroke-miterlimit=\"10\" stroke=\"#F96D00\"/></svg></div>
 
 
-            <script src=\"{{ asset ('js/jquery.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery-migrate-3.0.1.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/popper.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/bootstrap.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery.easing.1.3.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery.waypoints.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery.stellar.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/owl.carousel.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery.magnific-popup.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/aos.js')}}\"></script>
-            <script src=\"{{ asset ('js/jquery.animateNumber.min.js')}}\"></script>
-            <script src=\"{{ asset ('js/scrollax.min.js')}}\"></script>
-            <script src=\"{{ asset ('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}\"></script>
-            <script src=\"{{ asset ('js/google-map.js')}}\"></script>
-            <script src=\"{{ asset ('js/main.js')}}\"></script>
-        {% endblock %}
-    </body>
-</html>
-", "base.html.twig", "C:\\xampp\\htdocs\\Binder\\app\\Resources\\views\\base.html.twig");
+    <script src=\"{{ asset ('js/jquery.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery-migrate-3.0.1.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/popper.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/bootstrap.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery.easing.1.3.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery.waypoints.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery.stellar.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/owl.carousel.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery.magnific-popup.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/aos.js')}}\"></script>
+    <script src=\"{{ asset ('js/jquery.animateNumber.min.js')}}\"></script>
+    <script src=\"{{ asset ('js/scrollax.min.js')}}\"></script>
+    <script src=\"{{ asset ('https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')}}\"></script>
+    <script src=\"{{ asset ('js/google-map.js')}}\"></script>
+    <script src=\"{{ asset ('js/main.js')}}\"></script>
+{% endblock %}
+</body>
+</html>", "base.html.twig", "C:\\xampp\\htdocs\\Binder\\app\\Resources\\views\\base.html.twig");
     }
 }

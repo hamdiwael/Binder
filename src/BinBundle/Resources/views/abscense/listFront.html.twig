@@ -1,39 +1,43 @@
 {% extends 'base.html.twig' %}
 {% block content %}
-    <center><h3>List of abscenses </h3></center>
+    <section class="hero-wrap hero-wrap-2" style="background-image:"{{ asset('web/images/bg_2.jpg') }}";">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+                <h1 class="mb-2 bread">List of absences</h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Check absences <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
 <div class="container">
 
     <center><h3> </h3></center>
-<br/><br/><br/><br/><br/>
+
     <center><table class="table table-striped"  >
             <thead>
-            <th>id</th>
-            <th>pupl</th>
-            <th>groupe</th>
-            <th>nbr</th>
-            <th>date</th>
-            <th>subject</th>
+
+            <th>Pupil</th>
+            <th>Class</th>
+            <th>Number of absences</th>
+            <th>Date</th>
+            <th>Subject</th>
             <th></th>
             </thead>
             <tbody>
             {% for a in abscense %}
                 <tr>
-                    <td>{{ a.id }}</td>
+
                     <td>{{ a.pupl }}</td>
                     <td>{{ a.groupe }}</td>
                     <td>{{ a.nbr }}</td>
-                    <td>{{ a.date|date() }}</td>
+                    <td>{{ a.date }}</td>
                     <td>{{ a.subject}}</td>
-                        <td><a style=" background-color: #8B0000;color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;" href="{{ path('showab',{"id":a.id}) }}">Details</a>
-                    <a style=" background-color: #8B0000;color: white;
-            padding: 5px 10px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;" href="{{ path('calabs',{"id":a.id}) }}">calendar</a></td>
+                        <td><a  class ="btn btn-primary btn-md" href="{{ path('showab',{"id":a.id}) }}">Details</a>
+                    <a  class ="btn btn-success btn-md" href="{{ path('calabs',{"id":a.id}) }}">Calendar</a></td>
 
                 </tr>
             {% endfor %}

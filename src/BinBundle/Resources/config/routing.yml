@@ -1,3 +1,71 @@
 bin_homepage:
     path:     /
     defaults: { _controller: BinBundle:Default:index }
+binaddabs:
+    path: /teacher/addabscense
+    defaults: { _controller: BinBundle:abscense:add }
+
+listabsences:
+    path: /listabscense
+    defaults: { _controller: BinBundle:abscense:list }
+listabsencesFront:
+    path: /listabscenseFront
+    defaults: { _controller: BinBundle:abscense:listFront }
+
+
+deleteabs:
+    path: /teacher/deleteabscense/{id}
+    defaults: { _controller: BinBundle:abscense:delete }
+
+updateabs:
+
+    path: /teacher/updateabscense/{id}
+    defaults: { _controller: BinBundle:abscense:update }
+
+binaddot:
+    path: /teacher/addnotification
+    defaults: { _controller: BinBundle:notification:add }
+
+listnot:
+    path: /listnotification
+    defaults: { _controller: BinBundle:notification:list }
+listnotFront:
+    path: /listnotificationFront
+    defaults: { _controller: BinBundle:notification:listFront }
+deletenot:
+    path: /teacher/deletenotification/{id}
+    defaults: { _controller: BinBundle:notification:delete }
+
+updatenot:
+    path: /teacher/updatenotification/{id}
+    defaults: { _controller: BinBundle:notification:update }
+home:
+    path: /home
+    defaults: { _controller: BinBundle:Default:home }
+
+searchabscenses:
+    path: /searchabscense
+    defaults: { _controller: BinBundle:abscense:search }
+
+traitnot:
+    path: /parent/tratenotification/{id}
+    defaults: { _controller: BinBundle:notification:treat }
+
+showab:
+    path: /showabscense/{id}
+    defaults: { _controller: BinBundle:abscense:show }
+
+shownot:
+    path: /shownotifiication/{id}
+    defaults: { _controller: BinBundle:notification:show }
+
+replynot:
+    path: /repynotifiication
+    defaults: { _controller: BinBundle:notification:reply }
+
+calabs:
+    path: /calabscense/{id}
+    defaults: { _controller: BinBundle:abscense:calendar }
+searchnot:
+    path: /teacher/searchnotifiication
+    defaults: { _controller: BinBundle:notification:search }

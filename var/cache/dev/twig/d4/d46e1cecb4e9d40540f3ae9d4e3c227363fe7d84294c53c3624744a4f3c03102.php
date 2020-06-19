@@ -228,6 +228,6 @@ class __TwigTemplate_b7e72efecbfa5b2baa97711908cac6ffcbd0da783ae5c4b408d32c4ce19
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "/home/wael/34/binder/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "/home/wael/34/final/Binder/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/search.html.twig");
     }
 }

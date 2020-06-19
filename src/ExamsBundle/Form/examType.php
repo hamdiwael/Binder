@@ -9,6 +9,8 @@ use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\File;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class examType extends AbstractType
 {
@@ -18,6 +20,7 @@ class examType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+
             ->add('subject', choiceType::class, array('label'=>'subject',
                 'choices'=>array('History'=>'history',
                     'Gerography' =>'geography',
@@ -37,6 +40,14 @@ class examType extends AbstractType
             ->add('duration', choiceType::class, array('label'=>'Duration',
                 'choices'=>array('1 hour'=>'1',
                     '2 hours' =>'2'), 'required'=>true,))
+            ->add('file',FileType::class,array('data_class' => null),array('label'=>'file',
+                'constraints' => [
+                    new File([
+                        'maxSize' => '1024k',
+                        'mimeTypes' => [
+                            'application/pdf',
+                            'application/x-pdf',
+                        ]])]))
             ->add('confirm', SubmitType::class)
 
         ;

@@ -64,10 +64,10 @@ class exam extends \ExamsBundle\Entity\exam implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idE', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'subject', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'date', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'duration', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idgrade'];
+            return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idE', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'subject', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'date', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'duration', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'file'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idE', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'subject', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'date', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'duration', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idgrade'];
+        return ['__isInitialized__', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'idE', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'subject', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'date', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'duration', '' . "\0" . 'ExamsBundle\\Entity\\exam' . "\0" . 'file'];
     }
 
     /**
@@ -224,34 +224,12 @@ class exam extends \ExamsBundle\Entity\exam implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getIdGrade()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdGrade', []);
-
-        return parent::getIdGrade();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function getDate()
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDate', []);
 
         return parent::getDate();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setIdGrade($idgrade)
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdGrade', [$idgrade]);
-
-        return parent::setIdGrade($idgrade);
     }
 
     /**
@@ -274,6 +252,28 @@ class exam extends \ExamsBundle\Entity\exam implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDuration', []);
 
         return parent::getDuration();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFile()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFile', []);
+
+        return parent::getFile();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setFile($file)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFile', [$file]);
+
+        return parent::setFile($file);
     }
 
 }

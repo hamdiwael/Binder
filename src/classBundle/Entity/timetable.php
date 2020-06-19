@@ -8,7 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * timetable
  *
- * @ORM\Table(name="timetable")
+ * @ORM\Table(name="ttime")
  * @ORM\Entity(repositoryClass="classBundle\Repository\timetableRepository")
  */
 class timetable
@@ -29,7 +29,7 @@ class timetable
      *   mimeTypes = {"application/pdf", "application/x-pdf"},
      *   mimeTypesMessage = "Please upload a valid PDF")
      *
-     * @ORM\Column(name="content", type="string", length=255)
+     * @ORM\Column(name="pdf", type="string", length=255)
      */
     private $content;
 

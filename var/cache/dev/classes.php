@@ -4687,6 +4687,36 @@ return $controller;
 }
 namespace Symfony\Component\Security\Http
 {
+use Symfony\Component\HttpFoundation\Request;
+interface AccessMapInterface
+{
+public function getPatterns(Request $request);
+}
+}
+namespace Symfony\Component\Security\Http
+{
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestMatcherInterface;
+class AccessMap implements AccessMapInterface
+{
+private $map = [];
+public function add(RequestMatcherInterface $requestMatcher, array $attributes = [], $channel = null)
+{
+$this->map[] = [$requestMatcher, $attributes, $channel];
+}
+public function getPatterns(Request $request)
+{
+foreach ($this->map as $elements) {
+if (null === $elements[0] || $elements[0]->matches($request)) {
+return [$elements[1], $elements[2]];
+}
+}
+return [null, null];
+}
+}
+}
+namespace Symfony\Component\Security\Http
+{
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\FinishRequestEvent;
@@ -5281,11 +5311,11 @@ use Twig\RuntimeLoader\RuntimeLoaderInterface;
 use Twig\TokenParser\TokenParserInterface;
 class Environment
 {
-const VERSION ='1.42.4';
-const VERSION_ID = 14204;
+const VERSION ='1.42.5';
+const VERSION_ID = 14205;
 const MAJOR_VERSION = 1;
 const MINOR_VERSION = 42;
-const RELEASE_VERSION = 4;
+const RELEASE_VERSION = 5;
 const EXTRA_VERSION ='';
 protected $charset;
 protected $loader;
@@ -7632,7 +7662,7 @@ if ($object instanceof self) {
 $ref = new \ReflectionClass($class);
 $methods = [];
 foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $refMethod) {
-if ('getenvironment'!== strtolower($refMethod->name)) {
+if ('getenvironment'!== strtr($refMethod->name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')) {
 $methods[] = $refMethod->name;
 }
 }
@@ -7643,7 +7673,7 @@ sort($methods);
 $cache = [];
 foreach ($methods as $method) {
 $cache[$method] = $method;
-$cache[$lcName = strtolower($method)] = $method;
+$cache[$lcName = strtr($method,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')] = $method;
 if ('g'=== $lcName[0] && 0 === strpos($lcName,'get')) {
 $name = substr($method, 3);
 $lcName = substr($lcName, 3);
@@ -7667,7 +7697,7 @@ self::$cache[$class] = $cache;
 $call = false;
 if (isset(self::$cache[$class][$item])) {
 $method = self::$cache[$class][$item];
-} elseif (isset(self::$cache[$class][$lcItem = strtolower($item)])) {
+} elseif (isset(self::$cache[$class][$lcItem = strtr($item,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')])) {
 $method = self::$cache[$class][$lcItem];
 } elseif (isset(self::$cache[$class]['__call'])) {
 $method = $item;

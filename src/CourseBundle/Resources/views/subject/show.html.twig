@@ -1,44 +1,60 @@
-{% extends "back.html.twig" %}
-{% block container %}
-<style>
-<style>
-    th, td {
-        padding: 10px;
-    }
-    th {
-        text-align: left;
-    }
-</style>
+{% extends "base2.html.twig" %}
+{% block content %}
+    <style>
 
-<h1>All Subjects</h1>
+        th, td {
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
 
-{% if subjects is not empty %}
-    <table>
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Teachers</th>
-            <th>Classes</th>
-            <th>Delete</th>
-            <th>Update</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for subject in subjects %}
-            <tr>
-                <td>{{ subject.name }}</td>
-                <td>{{ subject.teachers }}</td>
-                <td>{{ subject.classes  }}</td>
-                <td><a href="/admin/delete-subject/{{ subject.id }}">Delete</a></td>
-                <td><a href="/admin/update-subject/{{ subject.id }}">Update</a></td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-{% else %}
-    <p>No subject found.</p>
-{% endif %}
+    <h1>All Subjects</h1>
 
-<br/>
-<a href="/admin/create-subject">Create New</a>
+    <h1 xml:space="default"</h1>
+
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-close">
+                <div class="dropdown">
+                </div>
+            </div>
+            <div class="card-header d-flex align-items-center"></div>
+            <div class="card-body">
+                <div class="table-responsive table-bordered">
+
+                    {% if subjects is not empty %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Teachers</th>
+                                <th>Classes</th>
+                                <th>Delete</th>
+                                <th>Update</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for subject in subjects %}
+                                <tr>
+                                    <td>{{ subject.name }}</td>
+                                    <td>{{ subject.teachers }}</td>
+                                    <td>{{ subject.classes  }}</td>
+                                    <td><a class="btn btn-danger btn-sm" href="/admin/delete-subject/{{ subject.id }}">Delete</a></td>
+                                    <td><a class="btn btn-warning btn-sm" href="/admin/update-subject/{{ subject.id }}">Update</a></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p>No subject found.</p>
+                    {% endif %}
+
+                    <br/>
+                    <a class="btn btn-primary btn-sm" href="/admin/create-subject">Create New</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -23,17 +23,11 @@ class grade
 
 
 
-    /**
-     * @ORM\OneToOne(targetEntity="teacher")
-     *
-     * @ORM\JoinColumn(name="teacher",referencedColumnName="id")
-     */
-    private $teacher;
 
     /**
-     * @ORM\OneToOne(targetEntity="pupil")
+     * @ORM\ManyToOne(targetEntity="BinBundle\Entity\pupil")
      *
-     * @ORM\JoinColumn(name="pupil",referencedColumnName="id")
+     * @ORM\JoinColumn(name="pupil",referencedColumnName="id" ,onDelete="CASCADE")
      */
     private $pupil;
 
@@ -64,6 +58,15 @@ class grade
      *
      * @return grade
      */
+
+
+
+    /**
+     * @var string
+     * @ORM\Column(name="teacher" , type="string")
+     */
+    private $teacher;
+
     public function setExamName($examname)
     {
         $this->examname = $examname;
@@ -89,6 +92,8 @@ class grade
     {
         return $this->idG;
     }
+
+
 
 
 
@@ -165,4 +170,3 @@ class grade
         return $this->grade;
     }
 }
-

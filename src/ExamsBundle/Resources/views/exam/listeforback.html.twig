@@ -12,21 +12,23 @@
     </form>
 </div>
 
-            <div class=table-responsive">
+            <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
 
                 <table class="table-hover table"  border="1">
 
                     <tr>
 
-                        <th>{{  knp_pagination_sortable(pagination, 'subject', 'ex.subject') }}</th>
-                        <th>{{  knp_pagination_sortable(pagination, 'date', 'ex.date')}}</th>
+                        <th>Subject</th>
+                        <th>Date</th>
                         <th>Duration</th>
+                        <th>File</th>
                     </tr>
 
-                    {% for exam in pagination %} <tr class="success">
+                    {% for exam in listexams %} <tr class="success">
                         <td>{{ exam.subject}}</td>
                         <td>{{ exam.date|date }}</td>
                         <td>{{ exam.duration}}</td>
+                        <td><a href="{{ asset('uploads/brochures/' ~ exam.file) }}">{{ exam.file }}</td>
                         <td> <a href="{{ path('updateexams',{'id':exam.ide}) }}" class ="btn btn-primary btn-sm">Update</a></td>
                         <td> <a href="{{ path('deleteexams',{'id':exam.ide}) }}" class ="btn btn-warning btn-sm">Delete</a></td>
                     </tr>
@@ -35,8 +37,8 @@
                 </table>
                 </div>
                 <br/>
-                <div class="navigation">
-                    {{ knp_pagination_render(pagination) }}
+                <div class="offset-sm-3">
+                    {{ knp_pagination_render(listexams) }}
                 </div>
                 </div> </div> </div>
     </section>

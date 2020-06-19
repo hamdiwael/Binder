@@ -25,7 +25,7 @@ class Course
 
     /**
      * @ORM\ManyToOne(targetEntity="Subject", inversedBy="courses")
-     * @ORM\JoinColumn(name="subjectfk", referencedColumnName="idSu")
+     * @ORM\JoinColumn(name="id", referencedColumnName="id")
      */
     private $Subject;
 
@@ -52,7 +52,7 @@ class Course
      */
     private $teacher;
 
-     /**
+    /**
      * Get id
      *
      * @return int
@@ -161,6 +161,5 @@ class Course
 
 
 }
-
 
 

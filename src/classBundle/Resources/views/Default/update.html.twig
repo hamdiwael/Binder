@@ -1,23 +1,30 @@
-{% extends 'baseback.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
     {% form_theme form 'bootstrap_4_layout.html.twig' %}
 
     <center>
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div class="overlay"></div>
+                    <div class="container">
+                        <div class="row no-gutters slider-text align-items-center justify-content-center">
+                            <div class="col-md-9 ftco-animate text-center">
 
-                        <fieldset style="width: 90%">
 
                             {{ form_start(form) }}
 
                             <h1>Update class</h1>
                             <br>
                             <br>
-                            <fieldset style="width: 100%">
+                            <fieldset style="width: 85%">
                                 <div class="input-group input-group-sm mb-3"><h2> Name </h2> {{ form_widget(form.nom) }}</div>
                                 <div class="input-group input-group-sm mb-3" ><h2>Number of Pupils </h2> {{ form_widget(form.nbPupils) }}</div>
 
 
                                  {{ form_widget(form.update) }}
                                 {{ form_end(form) }}
+                            </fieldset></div></div></div></div></section></section>
                                 </div>
                             </fieldset>
                         </fieldset>

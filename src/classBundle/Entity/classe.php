@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * classe
  *
- * @ORM\Table(name="classe")
+ * @ORM\Table(name="classes")
  * @ORM\Entity(repositoryClass="classBundle\Repository\classeRepository")
  */
 class classe
@@ -27,20 +27,15 @@ class classe
      * @var string
      * @Assert\NotBlank
      * @Assert\Length(min=1, max=10)
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255)
      */
     private $nom;
 
     /**
-     * @var int
-     * @Assert\Length(min=1, max=2)
+     * @var string
      * @Assert\NotBlank
-     *@Assert\Range(
-     *min=1,
-     * max=40,
-     *  minMessage="Negative species!",
-     * maxMessage="max 40 pupils")
-     * @ORM\Column(name="nbPupils", type="integer")
+     * @Assert\Length(min=1, max=10)
+     * @ORM\Column(name="session", type="string", length=255)
 
      */
     private $nbPupils;

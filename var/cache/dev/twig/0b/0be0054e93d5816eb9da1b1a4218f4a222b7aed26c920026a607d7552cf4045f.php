@@ -19,14 +19,14 @@ class __TwigTemplate_5cb5d116be29617147b694c9fc74abd540c2b2601c7af7832de047bce1f
         parent::__construct($env);
 
         $this->blocks = [
-            'container' => [$this, 'block_container'],
+            'content' => [$this, 'block_content'],
         ];
     }
 
     protected function doGetParent(array $context)
     {
         // line 1
-        return "back.html.twig";
+        return "base2.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = [])
@@ -37,7 +37,7 @@ class __TwigTemplate_5cb5d116be29617147b694c9fc74abd540c2b2601c7af7832de047bce1f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@Course/course/view.html.twig"));
 
-        $this->parent = $this->loadTemplate("back.html.twig", "@Course/course/view.html.twig", 1);
+        $this->parent = $this->loadTemplate("base2.html.twig", "@Course/course/view.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -48,13 +48,13 @@ class __TwigTemplate_5cb5d116be29617147b694c9fc74abd540c2b2601c7af7832de047bce1f
     }
 
     // line 2
-    public function block_container($context, array $blocks = [])
+    public function block_content($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "container"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "container"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 3
         echo "<style>
@@ -135,8 +135,8 @@ class __TwigTemplate_5cb5d116be29617147b694c9fc74abd540c2b2601c7af7832de047bce1f
 
     public function getSourceContext()
     {
-        return new Source("{% extends \"back.html.twig\" %}
-{% block container %}
+        return new Source("{% extends \"base2.html.twig\" %}
+{% block content %}
 <style>
     th, td {
         padding: 10px;
@@ -170,6 +170,6 @@ class __TwigTemplate_5cb5d116be29617147b694c9fc74abd540c2b2601c7af7832de047bce1f
 <a href=\"/show-courses\">View All</a> -
 <a href=\"/update-course/{{ course.id }}\">Modify</a>
 {% endblock %}
-", "@Course/course/view.html.twig", "/home/wael/34/binder/src/CourseBundle/Resources/views/course/view.html.twig");
+", "@Course/course/view.html.twig", "/home/wael/34/final/Binder/src/CourseBundle/Resources/views/course/view.html.twig");
     }
 }

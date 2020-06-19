@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Subject
  *
- * @ORM\Table(name="subject")
+ * @ORM\Table(name="subjec")
  * @ORM\Entity(repositoryClass="CourseBundle\Repository\SubjectRepository")
  */
 class Subject
@@ -20,13 +20,6 @@ class Subject
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="idSu", type="integer", unique=true)
-     */
-    private $idSu;
 
     /**
      * @var string
@@ -50,6 +43,13 @@ class Subject
     private $classes;
 
 
+
+    /**
+     * @ORM\OneToMany(targetEntity="BinBundle\Entity\abscense" , mappedBy="abscense")
+     */
+    private $abscense;
+
+
     /**
      * Get id
      *
@@ -61,15 +61,15 @@ class Subject
     }
 
     /**
-     * Set idSu
+     * Set id
      *
-     * @param integer $idSu
+     * @param integer $id
      *
      * @return Subject
      */
-    public function setIdSu($idSu)
+    public function setId($id)
     {
-        $this->idSu = $idSu;
+        $this->id = $id;
 
         return $this;
     }
@@ -162,4 +162,3 @@ class Subject
     }
 
 }
-

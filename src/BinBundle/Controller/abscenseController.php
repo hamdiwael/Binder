@@ -139,7 +139,8 @@ class abscenseController extends Controller
         $json = array();
         foreach($abscense as $a) {
             $json['title'] = $a->getPupl();
-            $json['start'] = date_format($a->getDate(),'Y-m-d');
+            $json['title'] = $a->getDate();
+
         }
         return $this->render('@Bin/abscense/calendar.html.twig', array('abscense' => $abscense));
     }

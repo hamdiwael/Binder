@@ -18,9 +18,6 @@ class DefaultController extends Controller
     }
     public function listAction(Request $request) {
         $em= $this->getDoctrine()->getManager();
-       // $listofexams= $em ->getRepository('ExamsBundle:exam')->findAll();
-       // $dql = "SELECT ex FROM ExamsBundle:exam ex";
-       // $query = $em->createQuery($dql);
         $queryBuilder = $em ->getRepository('ExamsBundle:exam')->createQueryBuilder('ex');
         $queryBuilder->where('ex.subject LIKE :subject or ex.date LIKE :date')
             ->setParameter('subject', '%' . $request->query->getAlnum('filter').'%')
@@ -33,7 +30,7 @@ class DefaultController extends Controller
         $result=$paginator->paginate(
             $query,
             $request->query->getInt('page',1),
-            $request->query->getInt('limit',3)
+            $request->query->getInt('limit',1)
         );
         return $this->render('@Exams\exam\listeforback.html.twig', array('pagination'=>$result)
 

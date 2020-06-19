@@ -19,13 +19,10 @@ class updateAbscenseType extends AbstractType
             'choice_label'=>'name',
             'multiple'=>false,
             'expanded'=> false))
-            ->add('groupe',EntityType::class,array('class'=>'BinBundle:groupee',
-                'choice_label'=>'name',
-                'multiple'=>false,
-                'expanded'=> false))
+            ->add('groupe')
             ->add('nbr')
             ->add('date')
-            ->add('subject' ,EntityType::class,array('class'=>'BinBundle:subjectt',
+            ->add('subject' ,EntityType::class,array('class'=>'CourseBundle:Subject',
         'choice_label'=>'name',
         'multiple'=>false,
         'expanded'=> false))

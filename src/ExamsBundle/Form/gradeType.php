@@ -20,7 +20,14 @@ class gradeType extends AbstractType
     {
         $builder
             ->add('teacher', EntityType::class,array('class'=>teacher::class,'choice_label'=>'fullname','multiple'=>false))
-            ->add('pupil', EntityType::class, array('class'=>pupil::class,'choice_label'=>'fullname','multiple'=>false))
+
+
+
+            ->add('pupil',EntityType::class,array(
+                'class'=>'BinBundle:pupil',
+                'choice_label'=>'name',
+                'multiple'=>false,
+                'expanded' => false,))
             ->add('grade')
             ->add('examname', EntityType::class, array('class'=>exam::class, 'choice_label'=>'subject','multiple'=>false))
             ->add('Confirm', SubmitType::class)

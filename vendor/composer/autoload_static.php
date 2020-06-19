@@ -20,6 +20,10 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
     );
 
     public static $prefixLengthsPsr4 = array (
+        'h' => 
+        array (
+            'h4cc\\WKHTMLToPDF\\' => 17,
+        ),
         'c' => 
         array (
             'classBundle\\' => 12,
@@ -63,8 +67,14 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\Csv\\' => 11,
+        ),
         'K' => 
         array (
+            'Knp\\Snappy\\' => 11,
+            'Knp\\Bundle\\SnappyBundle\\' => 24,
             'Knp\\Bundle\\PaginatorBundle\\' => 27,
         ),
         'I' => 
@@ -79,6 +89,7 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
         'E' => 
         array (
             'ExamsBundle\\' => 12,
+            'Egyg33k\\CsvBundle\\' => 18,
         ),
         'D' => 
         array (
@@ -107,6 +118,10 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
     );
 
     public static $prefixDirsPsr4 = array (
+        'h4cc\\WKHTMLToPDF\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/h4cc/wkhtmltopdf-amd64',
+        ),
         'classBundle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/classBundle',
@@ -219,6 +234,18 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\Csv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/csv/src',
+        ),
+        'Knp\\Snappy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy',
+        ),
+        'Knp\\Bundle\\SnappyBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/knplabs/knp-snappy-bundle',
+        ),
         'Knp\\Bundle\\PaginatorBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/knplabs/knp-paginator-bundle',
@@ -238,6 +265,10 @@ class ComposerStaticInit21ba6daceff0f9e2e9d33f5fe05842fe
         'ExamsBundle\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/ExamsBundle',
+        ),
+        'Egyg33k\\CsvBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/egyg33k/csv-bundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

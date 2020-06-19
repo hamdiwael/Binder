@@ -27,7 +27,11 @@ class exam
 
      * @ORM\Column(name="subject", type="string", length=255)
      */
+
+
+
     private $subject;
+
 
 
     /**
@@ -49,6 +53,16 @@ class exam
      *
      * @return int
      */
+    /**
+     * @var string
+     * @Assert\File(
+     *   maxSize = "1024k",
+     *   mimeTypes = {"application/pdf", "application/x-pdf"},
+     *   mimeTypesMessage = "Please upload a valid PDF")
+     * @ORM\Column(name="file", type="string", length=255)
+     */
+    private $file;
+
     public function getIdE()
     {
         return $this->idE;
@@ -88,22 +102,7 @@ class exam
         return $this;
     }
 
-    /**
-     * @var int
-     * @ORM\ManyToOne(targetEntity="grade")
-     * @ORM\JoinColumn(name="idgrade", referencedColumnName="id", onDelete="CASCADE")
 
-     */
-    private $idgrade;
-    /**
-     * Get idgrade
-     *
-     * @return integer
-     */
-    public function getIdGrade()
-    {
-        return $this->idgrade;
-    }
 
     /**
      * Get date
@@ -114,19 +113,7 @@ class exam
     {
         return $this->date;
     }
-    /**
-     * Set idgrade
-     *
-     * @param integer $idgrade
-     *
-     * @return exam
-     */
-    public function setIdGrade($idgrade)
-    {
-        $this->idgrade = $idgrade;
 
-        return $this;
-    }
 
     /**
      * Set duration
@@ -151,5 +138,22 @@ class exam
     {
         return $this->duration;
     }
+
+    /**
+     * @return string
+     */
+    public function getFile()
+    {
+        return $this->file;
+    }
+
+    /**
+     * @param string $file
+     */
+    public function setFile($file)
+    {
+        $this->file = $file;
+    }
+
 }
 

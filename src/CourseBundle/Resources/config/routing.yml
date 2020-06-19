@@ -2,7 +2,7 @@ course_homepage:
     path:     /
     defaults: { _controller: CourseBundle:Default:index }
 create-course:
-    path:     /admin/create-course
+    path:     /teacher/create-course
     defaults: { _controller: CourseBundle:Course:create }
 show-courses:
     path:     /show-courses/
@@ -11,10 +11,10 @@ view-course:
     path:     /view-course/{id}
     defaults: { _controller: CourseBundle:Course:view }
 update-course:
-    path:     /admin/update-course/{id}
+    path:     /teacher/update-course/{id}
     defaults: { _controller: CourseBundle:Course:update }
 delete-course:
-    path:     /admin/delete-course/{id}
+    path:     /teacher/delete-course/{id}
     defaults: { _controller: CourseBundle:Course:delete }
 
 

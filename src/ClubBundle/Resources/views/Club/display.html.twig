@@ -1,41 +1,36 @@
-{% extends 'baseBack.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
-    <section id="main-content">
-    <section class="wrapper">
-    <div class="row">
-        <center>
-        <fieldset style="width:80%">
+<br/>
+    <h1><strong>List of clubs</strong></h1>
+        <div style="text-align: center;">
 
 
-            <table border="2">
+            <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
+
+                <table class="table-hover table"  border="1">
    <tr>
-       <th>id</th>
-       <th>name</th>
-       <th> spcialty</th>
-       <th>responsible</th>
+       <th>Name</th>
+       <th>Specialty</th>
+       <th>Responsible</th>
 
-       <th>members</th>
-       <th>image</th>
 
    </tr>
         {% for c in club %}
         <tr>
-            <td>{{  c.id }}</td>
+
             <td>{{ c.name }}</td>
             <td>{{ c.specialty }}</td>
             <td>{{ c.responsible }}</td>
 
-            <td>{{ c.members }}</td>
-            <td><img src="{{ asset('images/') }}{{ c.nomImage }}" style="width: 100px;height: 100px"></td>
-            <td><a  href="{{ path('club_deleteClub',{"id":c.id}) }}">delete</a></td>
-            <td><a  href="{{ path('club_updateClub',{"id":c.id}) }}">update</a></td>
-            <td><a  href="{{ path('detail_club',{"id":c.id}) }}">show detail</a></td>
+            <td><a class="btn btn-danger btn-sm" href="{{ path('club_deleteClub',{"id":c.id}) }}">delete</a></td>
+            <td><a  class="btn btn-warning btn-sm" href="{{ path('club_updateClub',{"id":c.id}) }}">update</a></td>
+            <td><a class="btn btn-primary btn-sm" href="{{ path('detail_club',{"id":c.id}) }}">show details</a></td>
         </tr>
         {% endfor %}
 
     </table>
             </fieldset>
-            </centre>
+            </div>
 
     </div> </section> </section>
 

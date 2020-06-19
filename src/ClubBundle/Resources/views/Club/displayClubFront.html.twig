@@ -1,28 +1,30 @@
 {% extends 'base.html.twig' %}
-    {% block section %}
-
-        <section class="hero-wrap hero-wrap-2" style="background-image: url('{{asset('Front/images/bg_2.jpg')}}');">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-                    <div class="col-md-9 ftco-animate text-center">
-                        <h1 class="mb-2 bread">Our clubs</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Library <i class="ion-ios-arrow-forward"></i></span></p>
-                    </div>
+{% block content %}
+        <section class="hero-wrap hero-wrap-2" style="background-image:"{{ asset('web/images/bg_2.jpg') }}";">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <h1 class="mb-2 bread">List of clubs</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Check clubs <i class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
+        </div>
         </section>
-    {% endblock %}
-{% block content %}
-    {% for c in club %}
+<br/>
+    <br/>
 
-        <div class="col-md-6 course d-lg-flex ftco-animate">
-            <div class="img" style="background-image: url({{ asset('images/') }}{{ c.nomImage }});"></div>
+
+    {% for c in club %}
+<div class="container centered">
+
+        <div class="col-md-10 course d-lg-flex ftco-animate">
+
             <div class="text bg-light p-4">
                 <h3><a href="{{path('clubDetailsfront',{'id':c.id})}}">{{c.name}}</a></h3>
                 <p>{{c.specialty}}</p>
             </div>
-        </div>
+        </div></div>
     {% endfor %}
 
 

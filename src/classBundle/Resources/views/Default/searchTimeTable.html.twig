@@ -1,4 +1,4 @@
-{% extends 'baseback.html.twig' %}
+{% extends 'base2.html.twig' %}
 {% block content %}
 <html>
 <head>
@@ -11,21 +11,23 @@
                             {{ form_start(form) }}
                             {{ form_widget(form.classe) }}</br>
                             {{ form_end(form) }}
-                            <table border="1">
+    <div class="table-hover table-bordered table-inbox table-condensed"  border="1">
+
+        <table class="table-hover table"  border="1">
                                 <tr>
-                                    <th>Time Table</th>
+                                    <th>Timetable</th>
                                     <th>Classes</th>
-                                    <th>Delete</th>
-                                    <th>Update</th>
+                                    <th></th>
+                                    <th></th>
 
                                 </tr>
                                 {% for p in timetable %}
                                     <tr>
-                                      <td>  <a href="{{ asset('uploads/brochures/' ~ p.content) }}">Time Table (PDF)</a></td>
+                                      <td>  <a href="{{ asset('uploads/brochures/' ~ p.content) }}">Timetable (PDF)</a></td>
 
                                         <td>{{ p.classe.nom }}</td>
-                                        <td><a  href="{{ path('class_deleteTimeTable',{"id":p.id}) }}">Delete</a></td>
-                                        <td><a  href="{{ path('class_updateTimeTable',{"id":p.id}) }}">Update</a></td>
+                                        <td><a  class="btn btn-danger btn-sm" href="{{ path('class_deleteTimeTable',{"id":p.id}) }}">Delete</a></td>
+                                        <td><a   class="btn btn-warning btn-sm" href="{{ path('class_updateTimeTable',{"id":p.id}) }}">Update</a></td>
 
                                     </tr>
 

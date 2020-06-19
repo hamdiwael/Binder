@@ -1,68 +1,67 @@
-{% extends "back.html.twig" %}
-{% block container %}
+{% extends "base2.html.twig" %}
+{% block content %}
 
-    <h1 xml:space="default" </h1>
+    <h1 xml:space="default"</h1>
 
-    <div class="col-lg-10">
-        <div class="card">
-            <div class="card-close">
-                <div class="dropdown">
-                </div>
-            </div>
-            <div class="card-header d-flex align-items-center">
-                <h3 class="h4">All courses</h3>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    {% if courses is not empty %}
-                    <table class="table-hover">
-                        <thead>
-                        <tr>
-                            <th>Subject</th>
-
-                            <th>Subject</th>
-                            <th>Content</th>
-                            <th>Teacher</th>
-                            <th>Delete</th>
-                            <th>Update</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for course in courses %}
-                            <td>
-                            <td>{{ course.subject }}</td>
-                            <td><a href="{{ course.content }}">Link</a></td>
-                            <td>{{ course.teacher }}</td>
-
-                            <td><a class="btn btn-danger" href="/admin/delete-course/{{ course.id }}">Delete</a></td>
-                            <td><a class="btn btn-secondary" href="/admin/update-course/{{ course.id }}">Update</a></td>
-                            </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                        <a class="btn btn-primary" href="/admin/create-course">Create New</a>
-
-                </div>
-            </div>
+    <div class="col-lg-12">
+    <div class="card">
+    <div class="card-close">
+        <div class="dropdown">
         </div>
     </div>
+    <div class="card-header d-flex align-items-center">
+        <h3 class="h4"><strong>All courses</strong></h3>
+    </div>
+    <div class="card-body">
+    <div class="table-responsive">
+    {% if courses is not empty %}
+        <table class="table-hover">
+            <thead>
+            <tr>
 
-<style>
-    th, td {
-        padding: 10px;
-    }
-    th {
-        text-align: left;
-    }
-</style>
+                <th>Subject</th>
+                <th>Content</th>
+                <th>Teacher</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for course in courses %}
+                <tr>
+                    <td>{{ course.subject }}</td>
+                    <td><a href="{{ course.content }}">Link</a></td>
+                    <td>{{ course.teacher }}</td>
 
-                        <div class="offset-sm-3">
-                                  {{ knp_pagination_render(courses) }}
-                        </div>
+                    <td><a class="btn btn-danger btn-sm" href="/teacher/delete-course/{{ course.id }}">Delete</a></td>
+                    <td><a class="btn btn-warning btn-sm" href="/teacher/update-course/{{ course.id }}">Update</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <a class="btn btn-primary btn-sm" href="/teacher/create-course">Create New</a>
 
-{% else %}
-    <p>No course found.</p>
-{% endif %}
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <style>
+            th, td {
+                padding: 10px;
+            }
+            th {
+                text-align: left;
+            }
+        </style>
+
+        <div class="offset-sm-3">
+            {{ knp_pagination_render(courses) }}
+        </div>
+
+    {% else %}
+        <p>No course found.</p>
+    {% endif %}
 
 
 

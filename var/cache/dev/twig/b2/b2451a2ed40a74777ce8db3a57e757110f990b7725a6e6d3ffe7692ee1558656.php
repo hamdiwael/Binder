@@ -838,6 +838,6 @@ class __TwigTemplate_fa49a6850535667efa347053c6e0eff296e80cad877d7159ec976c4b761
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/wael/34/binder/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/wael/34/integration/web/Binder/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

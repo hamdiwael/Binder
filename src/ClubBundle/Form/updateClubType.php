@@ -17,8 +17,7 @@ class updateClubType extends AbstractType
         $builder->add('name')
                  ->add('specialty')
                   ->add('responsible')
-                  ->add('members')
-                   ->add('activities')
+
                     ->add('update',SubmitType::class);
     }/**
      * {@inheritdoc}

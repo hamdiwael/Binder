@@ -432,6 +432,6 @@ class __TwigTemplate_f225a9426227218fafe0ce30e4fc3aee78af5c89402cb1a98366b7791b7
     });
 
 /*]]>*/</script>
-", "@Twig/base_js.html.twig", "/home/wael/34/binder/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/base_js.html.twig");
+", "@Twig/base_js.html.twig", "/home/wael/34/integration/web/Binder/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/base_js.html.twig");
     }
 }
