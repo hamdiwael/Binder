@@ -40,7 +40,9 @@
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
-        
+        "sensio/generator-bundle": "^4.0",
+        "symfony/phpunit-bridge": "^4.0"
+        "symfony/process": "^4.0"
     },
     "scripts": {
         "symfony-scripts": [
